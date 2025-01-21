@@ -5,9 +5,9 @@ import torch
 class CrimeBot:
     def __init__(self):
         # Load intents and crime descriptions
-        with open('/data/intents.json', 'r') as f:
+        with open('./data/intents.json', 'r') as f:
             self.intents = json.load(f)['intents']
-        with open('/data/crime_descriptions.json', 'r') as f:
+        with open('./data/crime_description.json', 'r') as f:
             self.crime_descriptions = json.load(f)
 
         # Initialize the sentence transformer model

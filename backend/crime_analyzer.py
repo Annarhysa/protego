@@ -6,7 +6,7 @@ import base64
 
 class CrimeAnalyzer:
     def __init__(self):
-        self.crime_data = pd.read_csv('/data/crime_data.csv')
+        self.crime_data = pd.read_csv('./data/crime_data.csv')
 
     def analyze_crime(self, query):
         parts = query.split()

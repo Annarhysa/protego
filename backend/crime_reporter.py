@@ -6,7 +6,7 @@ from location import get_location
 
 class CrimeReporter:
     def __init__(self):
-        self.report_file = '/data/reported_crimes.csv'
+        self.report_file = './data/reported_crimes.csv'
         self.load_attack_types()
 
     def load_attack_types(self):
