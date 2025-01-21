@@ -1,6 +1,7 @@
 from sentence_transformers import SentenceTransformer, util
 import json
 import torch
+import random
 
 class CrimeBot:
     def __init__(self):

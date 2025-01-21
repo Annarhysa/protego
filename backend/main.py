@@ -1,5 +1,6 @@
 import sys
 import random
+import pandas as pd
 from chatbot import CrimeBot
 from crime_analyzer import CrimeAnalyzer
 from crime_reporter import CrimeReporter
@@ -8,13 +9,31 @@ def handle_crime_query(bot, query):
     response = bot.get_response(query)
     print(f"\nBot: {response}")
     
-    # If the query is about a specific crime, show similar crimes
     similar_crimes = bot.get_similar_crimes(query)
     if similar_crimes:
         print("\nRelated crimes you might want to know about:")
         for crime in similar_crimes:
-            # Show truncated description with ellipsis
             print(f"- {crime['crime']}: {crime['description'][:100]}...")
+
+def display_analysis_result(result):
+    if isinstance(result, str):
+        print(f"\nBot: {result}")
+    else:
+        print("\nAnalysis Results:")
+        data = result['data']
+        print(f"Total records found: {len(data)}")
+        
+        # Display summary statistics
+        df = pd.DataFrame(data)
+        crimes = ['murder', 'rape', 'kidnapping_abduction', 'robbery', 'burglary']
+        total_crimes = df[crimes].sum()
+        
+        print("\nCrime Statistics:")
+        for crime, count in total_crimes.items():
+            print(f"- {crime.replace('_', ' ').title()}: {int(count)}")
+        
+        # The plot can be saved or displayed depending on your UI requirements
+        print("\nVisualization has been generated.")
 
 def main():
     print("Welcome to Crime Awareness and Reporting Portal")
@@ -27,7 +46,7 @@ def main():
     while True:
         try:
             user_input = input("\nYou: ").strip()
-            original_input = user_input  # Keep original case for crime queries
+            original_input = user_input
             user_input = user_input.lower()
 
             if user_input == 'exit':
@@ -35,16 +54,16 @@ def main():
                 break
             elif user_input == 'help':
                 print("\nAvailable commands:")
+                print("- analyze: Start interactive crime analysis")
                 print("- ask [crime]: Ask about a specific crime")
                 print("- similar [crime]: Find similar crimes")
                 print("- report: Report a crime")
-                print("- analyze [state/city] [year]: Get crime statistics")
                 print("- exit: Exit the program")
                 continue
 
             if user_input.startswith('analyze'):
-                result = analyzer.analyze_crime(user_input)
-                print(result)
+                result = analyzer.interactive_analysis()
+                display_analysis_result(result)
             elif user_input.startswith('report'):
                 reporter.report_crime()
             elif user_input.startswith('similar'):
@@ -70,7 +89,6 @@ def main():
                 
                 handle_crime_query(bot, crime_type)
             else:
-                # For general queries, also use the handle_crime_query function
                 handle_crime_query(bot, original_input)
 
         except KeyboardInterrupt:

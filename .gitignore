@@ -1,1 +1,3 @@
 backend/crime
+backend/__pycache__
+backend/data/reported_crimes.csv
