@@ -1,0 +1,22 @@
+{
+  "armed_assault": "A violent attack carried out with weapons against people or property",
+  "bombing": "The use of explosive devices to cause damage, injury, or terror",
+  "assassination": "The deliberate killing of a prominent person or political figure",
+  "kidnapping": "The unlawful taking and holding of a person against their will",
+  "hostage_taking": "Seizing and detaining people while demanding conditions for their release",
+  "facility_attack": "Deliberately targeting and damaging buildings, infrastructure or facilities",
+  "unarmed_assault": "Physical attack without weapons that may cause injury or harm",
+  "theft": "The act of taking someone else's property without permission",
+  "robbery": "Taking property from a person using force or threat of force",
+  "burglary": "Unlawful entry into a structure to commit theft or another crime",
+  "fraud": "Deception for financial or personal gain",
+  "cybercrime": "Criminal activities carried out using computers or the internet",
+  "stalking": "Unwanted persistent following, watching or harassing of another person",
+  "domestic_violence": "Violent or aggressive behavior within the home",
+  "sexual_assault": "Any unwanted sexual act or behavior without consent",
+  "murder": "The unlawful and intentional killing of another person",
+  "drug_trafficking": "Illegal trade in controlled substances",
+  "money_laundering": "Concealing the origins of illegally obtained money",
+  "human_trafficking": "Trading in humans, most commonly for forced labor or sexual exploitation",
+  "hate_crime": "Criminal acts motivated by bias against certain groups"
+}
