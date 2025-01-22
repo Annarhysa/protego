@@ -18,22 +18,36 @@ def handle_crime_query(bot, query):
 def display_analysis_result(result):
     if isinstance(result, str):
         print(f"\nBot: {result}")
-    else:
-        print("\nAnalysis Results:")
-        data = result['data']
-        print(f"Total records found: {len(data)}")
-        
-        # Display summary statistics
-        df = pd.DataFrame(data)
-        crimes = ['murder', 'rape', 'kidnapping_abduction', 'robbery', 'burglary']
-        total_crimes = df[crimes].sum()
-        
-        print("\nCrime Statistics:")
-        for crime, count in total_crimes.items():
-            print(f"- {crime.replace('_', ' ').title()}: {int(count)}")
-        
-        # The plot can be saved or displayed depending on your UI requirements
-        print("\nVisualization has been generated.")
+        return
+
+    print("\nAnalysis Results:")
+    data = result['data']
+    print(f"Total records found: {len(data)}")
+    
+    # Display summary statistics
+    df = pd.DataFrame(data)
+    crimes = ['murder', 'rape', 'kidnapping_abduction', 'robbery', 'burglary']
+    total_crimes = df[crimes].sum()
+    
+    print("\nHistorical Crime Statistics:")
+    for crime, count in total_crimes.items():
+        print(f"- {crime.replace('_', ' ').title()}: {int(count)}")
+    
+    # Display predictions if available
+    if 'predictions' in result and result['predictions']:
+        print("\nPredicted Crime Rates:")
+        for crime, pred_data in result['predictions'].items():
+            forecast = pred_data['forecast']
+            print(f"\n{crime.replace('_', ' ').title()}:")
+            for idx, row in forecast.iterrows():
+                year = row['ds'].year
+                predicted = int(row['yhat'])
+                lower = int(row['yhat_lower'])
+                upper = int(row['yhat_upper'])
+                print(f"  {year}: {predicted} cases (95% CI: {lower}-{upper})")
+    
+    # The plot has been generated and saved
+    print(f"\nVisualization has been saved to: {result['plot_path']}")
 
 def main():
     print("Welcome to Crime Awareness and Reporting Portal")
