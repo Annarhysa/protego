@@ -20,7 +20,7 @@ class CrimePredictor:
         yearly_data['ds'] = pd.to_datetime(yearly_data['ds'].astype(str))
         return yearly_data
 
-    def train_and_predict(self, historical_data, crime_type, future_years=5):
+    def train_and_predict(self, historical_data, crime_type, future_years=100):
         """Train model and make predictions"""
         # Prepare training data
         train_data = self.prepare_data(historical_data, crime_type)
