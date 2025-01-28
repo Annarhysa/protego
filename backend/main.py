@@ -79,7 +79,9 @@ def main():
                 result = analyzer.interactive_analysis()
                 display_analysis_result(result)
             elif user_input.startswith('report'):
+                print("\nBot: Reporting a crime can be overwhelming. I'm here to guide you through this.")
                 reporter.report_crime()
+                print("\nBot: Remember, you're not alone. Reach out to emergency services if you need immediate help.")
             elif user_input.startswith('similar'):
                 crime_type = original_input[7:].strip()
                 if not crime_type:

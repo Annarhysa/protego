@@ -20,10 +20,7 @@ class CrimeReporter:
         print("\nCrime Reporting System")
         print("----------------------")
 
-        # Get current date
         current_date = datetime.now()
-
-        # Get location automatically
         try:
             lat, lon, location = get_location()
         except Exception as e:
@@ -31,7 +28,6 @@ class CrimeReporter:
             location = input()
             lat, lon = None, None
 
-        # Show attack types
         print("\nSelect type of crime:")
         for i, attack_type in enumerate(self.attack_types, 1):
             print(f"{i}. {attack_type}")
@@ -39,11 +35,9 @@ class CrimeReporter:
         type_index = int(input("Enter number: ")) - 1
         attack_type = self.attack_types[type_index]
 
-        # Get brief summary
         print("\nPlease provide a brief description of the incident:")
         summary = input()
 
-        # Save report
         report = {
             'iyear': current_date.year,
             'imonth': current_date.month,
@@ -55,9 +49,13 @@ class CrimeReporter:
             'attacktype1_txt': attack_type
         }
 
-        # Append to CSV
         df = pd.DataFrame([report])
         df.to_csv(self.report_file, mode='a', header=False, index=False)
 
         print("\nReport submitted successfully. Please contact emergency services if immediate help is needed.")
+        print("\nHere are some resources for you:")
+        print("- National Helpline: 112")
+        print("- Local Police: 100 or your regional number")
+        print("- Emotional Support: Visit www.support.com for guidance")
+        print("- Stay indoors, and ensure you're in a safe environment.")
         return report

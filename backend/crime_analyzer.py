@@ -135,12 +135,12 @@ class CrimeAnalyzer:
         if predict_input == 'y':
             while True:
                 try:
-                    years = input("Enter number of years to predict (1-10): ").strip()
+                    years = input("Enter number of years to predict (1-100): ").strip()
                     years = int(years)
-                    if 1 <= years <= 10:
+                    if 1 <= years <= 100:
                         params['predict_years'] = years
                         break
-                    print("Please enter a number between 1 and 10.")
+                    print("Please enter a number between 1 and 100.")
                 except ValueError:
                     print("Please enter a valid number.")
 
