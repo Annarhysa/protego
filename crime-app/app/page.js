@@ -55,7 +55,7 @@ export default function Home() {
         </Link>
 
         {/* Additional Card Example */}
-        <Link href="/example">
+        {/* <Link href="/example">
           <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center h-full flex flex-col justify-between">
             <div className="text-4xl text-blue-500 mb-4">📋</div>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
@@ -65,7 +65,7 @@ export default function Home() {
               This is an example of an additional feature card.
             </p>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
