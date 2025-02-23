@@ -2,3 +2,8 @@ backend/crime
 backend/__pycache__
 backend/data/reported_crimes.csv
 backend/output/plots
+crime-app/node_modules
+crime-app/build
+crime-app/.env
+crime-app/package-lock.json
+cry
