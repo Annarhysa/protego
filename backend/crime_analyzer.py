@@ -29,7 +29,10 @@ class CrimeAnalyzer:
             data = data[data['state_ut'].str.contains(state, case=False)]
         if district:
             data = data[data['district'].str.contains(district, case=False)]
-        return sorted(data['year'].unique())
+        
+        # Convert numpy.int64 to Python int
+        years = sorted(data['year'].unique().tolist())
+        return years
 
     def get_prevalent_crimes(self, state=None, district=None):
         """Get crimes sorted by prevalence for location"""

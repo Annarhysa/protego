@@ -6,6 +6,7 @@ from crime_analyzer import CrimeAnalyzer
 from crime_reporter import CrimeReporter
 
 app = Flask(__name__)
+app.static_folder = 'output/plots'
 CORS(app)
 
 bot = CrimeBot()
@@ -43,6 +44,7 @@ def display_analysis_result(result):
                 } for idx, row in forecast.iterrows()
             ]
     
+    analysis_results['plot'] = result['plot']
     analysis_results['plot_path'] = result['plot_path']
     return analysis_results
 
@@ -101,6 +103,9 @@ def analyze():
 @app.route('/report', methods=['POST'])
 def report():
     data = request.json
+    if not data or not data.get('crime'):
+        return jsonify({"error": "Please provide crime details."}), 400
+
     reporter.report_crime(data)
     return jsonify({"message": "Crime reported successfully. Remember, you're not alone. Reach out to emergency services if you need immediate help."})
 
@@ -133,6 +138,56 @@ def query():
     
     response, similar_crimes = handle_crime_query(user_input)
     return jsonify({"response": response, "similar_crimes": similar_crimes})
+
+
+@app.route('/states', methods=['GET'])
+def get_available_states():
+    """
+    Endpoint to get a list of available states for analysis.
+    """
+    try:
+        states = analyzer.states
+        print('states',states)
+        return jsonify({'states': states})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/districts', methods=['GET'])
+def get_available_districts():
+    """
+    Endpoint to get a list of available districts for a given state.
+    Requires a 'state' query parameter.
+    """
+    try:
+        state = request.args.get('state')
+        if not state:
+            return jsonify({'error': 'State parameter is required'}), 400
+        districts = analyzer.get_districts(state)
+        return jsonify({'districts': districts})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+@app.route('/years', methods=['GET'])
+def get_years():
+    """Get available years for a given state/district"""
+    state = request.args.get('state')
+    district = request.args.get('district')
+    
+    try:
+        years = analyzer.get_years(state, district)
+        return jsonify({"years": years})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/prevalent-crimes', methods=['GET'])
+def get_prevalent_crimes():
+    """Get crimes sorted by prevalence for a given state/district"""
+    state = request.args.get('state')
+    district = request.args.get('district')
+    
+    prevalent_crimes = analyzer.get_prevalent_crimes(state, district)
+    return jsonify({"prevalent_crimes": prevalent_crimes})
+
 
 if __name__ == "__main__":
     app.run(debug=True)
