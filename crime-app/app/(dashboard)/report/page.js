@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { API_URL } from "@/config/constants";
 
 const ReportPage = () => {
   const [crimeDetails, setCrimeDetails] = useState("");
@@ -11,7 +12,7 @@ const ReportPage = () => {
   const [message, setMessage] = useState("");
 
   const handleReport = async () => {
-    const res = await fetch("http://127.0.0.1:5000/report", {
+    const res = await fetch(`${API_URL}/report`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ 

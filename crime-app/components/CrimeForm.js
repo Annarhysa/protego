@@ -9,8 +9,9 @@ import Image from "next/image";
 import { Progress } from "./ui/progress";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "./ui/table";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { API_URL } from "@/config/constants";
 
-const CrimeForm = ({ onSubmit }) => {
+const CrimeForm = () => {
   const [state, setState] = useState("");
   const [district, setDistrict] = useState("");
   const [years, setYears] = useState("");
@@ -24,7 +25,7 @@ const CrimeForm = ({ onSubmit }) => {
   const [report, setReport] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/states")
+    fetch(`${API_URL}/states`)
       .then((res) => res.json())
       .then((data) => setStates(data.states || []))
       .catch((err) => console.error("Error fetching states:", err));
@@ -32,7 +33,7 @@ const CrimeForm = ({ onSubmit }) => {
 
   useEffect(() => {
     if (state) {
-      fetch(`http://127.0.0.1:5000/districts?state=${state}`)
+      fetch(`${API_URL}/districts?state=${state}`)
         .then((res) => res.json())
         .then((data) => setDistricts(data.districts || []))
         .catch((err) => console.error("Error fetching districts:", err));
@@ -43,12 +44,12 @@ const CrimeForm = ({ onSubmit }) => {
 
   useEffect(() => {
     if (state || district) {
-      fetch(`http://127.0.0.1:5000/years?state=${state}&district=${district}`)
+      fetch(`${API_URL}/years?state=${state}&district=${district}`)
         .then((res) => res.json())
         .then((data) => setAvailableYears(data.years || []))
         .catch((err) => console.error("Error fetching years:", err));
 
-      fetch(`http://127.0.0.1:5000/prevalent-crimes?state=${state}&district=${district}`)
+      fetch(`${API_URL}/prevalent-crimes?state=${state}&district=${district}`)
         .then((res) => res.json())
         .then((data) => {
           if (Array.isArray(data.prevalent_crimes)) {
@@ -73,7 +74,7 @@ const CrimeForm = ({ onSubmit }) => {
     setLoading(true);
     setReport(null);
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch(`${API_URL}/analyze`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -244,7 +245,7 @@ const CrimeForm = ({ onSubmit }) => {
                     <h3 className="text-lg font-semibold mb-4">Crime Trend Plot</h3>
                     <div className="border rounded-lg overflow-hidden shadow-sm max-w-lg mx-auto">
                       <Image
-                        src={`http://127.0.0.1:5000/static/${report.plot_path.split('\\').pop()}`}
+                        src={`${API_URL}/static/${report.plot_path.split('\\').pop()}`}
                         alt="Crime Trend Plot"
                         width={600}
                         height={400}

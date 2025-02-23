@@ -4,6 +4,7 @@ import axios from "axios";
 import { Button } from "./ui/button";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "./ui/card";
 import { Input } from "./ui/input";
+import { API_URL } from "@/config/constants";
 
 const QueryCrime = () => {
   const [query, setQuery] = useState("");
@@ -18,7 +19,7 @@ const QueryCrime = () => {
     }
 
     try {
-      const res = await axios.get(`http://127.0.0.1:5000/query?input=${query}`);
+      const res = await axios.get(`${API_URL}/query?input=${query}`);
       setResponse(res.data.response);
       setSimilarCrimes(res.data.similar_crimes || []);
       setError("");
