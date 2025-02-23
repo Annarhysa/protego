@@ -106,7 +106,7 @@ def report():
     if not data or not data.get('crime'):
         return jsonify({"error": "Please provide crime details."}), 400
 
-    reporter.report_crime(data)
+    reporter.report_crime(data)  # Pass the data to the report_crime method
     return jsonify({"message": "Crime reported successfully. Remember, you're not alone. Reach out to emergency services if you need immediate help."})
 
 @app.route('/similar', methods=['GET'])

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { Button } from "./ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "./ui/card";
 import { Input } from "./ui/input";
 
 const QueryCrime = () => {
@@ -32,38 +32,50 @@ const QueryCrime = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Query Crime</CardTitle>
+      <CardTitle className="text-2xl font-bold">Query Crime</CardTitle>
+        <CardDescription>Ask about a crime and get detailed information.</CardDescription>
       </CardHeader>
-      <CardContent>
-        <Input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Ask about a crime"
-          className="mb-4"
-        />
-        <Button onClick={handleQuery}>Ask</Button>
+      <CardContent className="space-y-4">
+        <div className="flex space-x-4">
+          <Input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Ask about a crime"
+            className="flex-1"
+          />
+          <Button onClick={handleQuery}>Ask</Button>
+        </div>
 
-        {error && <p className="text-red-500">{error}</p>}
+        {error && <p className="text-red-500 text-sm">{error}</p>}
 
         {response && (
-          <div className="mt-4">
-            <h2 className="text-xl font-bold">Response:</h2>
-            <p>{response}</p>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl">Response</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700">{response}</p>
+            </CardContent>
+          </Card>
         )}
 
         {similarCrimes.length > 0 && (
-          <div className="mt-4">
-            <h2 className="text-xl font-bold">Similar Crimes:</h2>
-            <ul>
-              {similarCrimes.map((crime, index) => (
-                <li key={index} className="mt-2">
-                  <strong>{crime.crime}</strong>: {crime.description}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-xl">Similar Crimes</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {similarCrimes.map((crime, index) => (
+                  <Card key={index} className="p-4">
+                    <h3 className="font-semibold text-lg">{crime.crime}</h3>
+                    <p className="text-gray-700">{crime.description}</p>
+                  </Card>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         )}
       </CardContent>
     </Card>

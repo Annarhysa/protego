@@ -6,13 +6,19 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 const ReportPage = () => {
   const [crimeDetails, setCrimeDetails] = useState("");
+  const [location, setLocation] = useState("");
+  const [attackType, setAttackType] = useState("");
   const [message, setMessage] = useState("");
 
   const handleReport = async () => {
     const res = await fetch("http://127.0.0.1:5000/report", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ crime: crimeDetails }),
+      body: JSON.stringify({ 
+        crime: crimeDetails,
+        location: location,
+        attack_type: attackType
+      }),
     });
     const data = await res.json();
     setMessage(data.message);
@@ -21,7 +27,7 @@ const ReportPage = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Report a Crime</CardTitle>
+      <CardTitle className="text-2xl font-bold">Report a crime</CardTitle>
       </CardHeader>
       <CardContent>
         <Input
@@ -31,7 +37,21 @@ const ReportPage = () => {
           placeholder="Enter crime details"
           className="mb-4"
         />
-        <Button onClick={handleReport}>Report Crime</Button>
+        <Input
+          type="text"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+          placeholder="Enter location"
+          className="mb-4"
+        />
+        <Input
+          type="text"
+          value={attackType}
+          onChange={(e) => setAttackType(e.target.value)}
+          placeholder="Enter type of attack"
+          className="mb-4"
+        />
+        <Button className="mt-3" onClick={handleReport}>Report Crime</Button>
         {message && <p className="mt-4 text-green-500">{message}</p>}
       </CardContent>
     </Card>
