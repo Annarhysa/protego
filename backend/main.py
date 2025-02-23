@@ -47,9 +47,55 @@ def display_analysis_result(result):
     return analysis_results
 
 # API Endpoints
-@app.route('/analyze', methods=['GET'])
+@app.route('/analyze', methods=['POST'])
 def analyze():
-    result = analyzer.interactive_analysis()
+    # Get JSON data from the request
+    data = request.json
+
+    # Validate required fields
+    if not data:
+        return jsonify({"error": "No data provided. Please provide analysis parameters."}), 400
+
+    # Extract parameters
+    params = {
+        'state': data.get('state'),
+        'district': data.get('district'),
+        'years': data.get('years', []),
+        'crimes': data.get('crimes', []),
+        'predict_years': data.get('predict_years', 0)
+    }
+
+    # Validate at least one location parameter is provided
+    if not params['state'] and not params['district']:
+        return jsonify({"error": "You must specify either a state or a district."}), 400
+
+    # Validate years
+    available_years = analyzer.get_years(params['state'], params['district'])
+    if params['years']:
+        # Filter out invalid years
+        params['years'] = [year for year in params['years'] if year in available_years]
+        if not params['years']:
+            params['years'] = available_years  # Use all available years if no valid years are provided
+    else:
+        params['years'] = available_years  # Use all available years if no years are provided
+
+    # Validate crimes
+    prevalent_crimes = analyzer.get_prevalent_crimes(params['state'], params['district'])
+    if params['crimes']:
+        # Filter out invalid crimes
+        params['crimes'] = [crime for crime in params['crimes'] if crime in [c[0] for c in prevalent_crimes]]
+        if not params['crimes']:
+            params['crimes'] = [crime[0] for crime in prevalent_crimes]  # Use all crimes if no valid crimes are provided
+    else:
+        params['crimes'] = [crime[0] for crime in prevalent_crimes]  # Use all crimes if no crimes are provided
+
+    # Validate predict_years
+    if params['predict_years']:
+        if not (1 <= params['predict_years'] <= 100):
+            return jsonify({"error": "Prediction years must be between 1 and 100."}), 400
+
+    # Generate analysis
+    result = analyzer.generate_analysis(params)
     return jsonify(display_analysis_result(result))
 
 @app.route('/report', methods=['POST'])
