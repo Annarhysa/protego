@@ -1,5 +1,7 @@
 from prophet import Prophet
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
@@ -40,7 +42,7 @@ class CrimePredictor:
             'ds': pd.date_range(
                 start=f'{last_year + 1}-01-01',
                 periods=future_years,
-                freq='Y'
+                freq='YE'
             )
         })
         
