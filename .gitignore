@@ -1,4 +1,14 @@
-backend/crime
+crime
 backend/__pycache__
 backend/data/reported_crimes.csv
 backend/output/plots
+frontend/node_modules
+frontend/build
+frontend/.env
+frontend/package-lock.json
+frontend/.next/
+frontend/out/
+frontend/build
+frontend/.DS_Store
+frontend/*.pem
+frontend/.vercel
