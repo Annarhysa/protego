@@ -1,6 +1,4 @@
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from io import BytesIO
@@ -31,10 +29,7 @@ class CrimeAnalyzer:
             data = data[data['state_ut'].str.contains(state, case=False)]
         if district:
             data = data[data['district'].str.contains(district, case=False)]
-        
-        # Convert numpy.int64 to Python int
-        years = sorted(data['year'].unique().tolist())
-        return years
+        return sorted(data['year'].unique())
 
     def get_prevalent_crimes(self, state=None, district=None):
         """Get crimes sorted by prevalence for location"""
@@ -48,38 +43,106 @@ class CrimeAnalyzer:
         return sorted([(crime, count) for crime, count in totals.items()], 
                      key=lambda x: x[1], reverse=True)
 
-    def interactive_analysis(self, params):
-        """Perform analysis based on provided parameters."""
-    # Validate parameters
-        if not params:
-            raise ValueError("No parameters provided.")
+    def interactive_analysis(self):
+        """Interactive analysis with step-by-step input and prediction option"""
+        params = {
+            'state': None,
+            'district': None,
+            'years': [],
+            'crimes': [],
+            'predict_years': 0
+        }
 
-        # Validate at least one location parameter is provided
-        if not params.get('state') and not params.get('district'):
-            raise ValueError("You must specify either a state or a district.")
+        # Keep asking for location until either state or district is provided
+        while not params['state'] and not params['district']:
+            # 1. State selection
+            print("\nAvailable states:")
+            for i, state in enumerate(self.states, 1):
+                print(f"{i}. {state}")
+            state_input = input("\nEnter state number (or press Enter to skip): ").strip()
+            
+            if state_input:
+                try:
+                    state_idx = int(state_input) - 1
+                    if 0 <= state_idx < len(self.states):
+                        params['state'] = self.states[state_idx]
+                    else:
+                        print("Invalid state number. Please try again.")
+                        continue
+                except ValueError:
+                    print("Please enter a valid number.")
+                    continue
 
-        # Validate years
-        available_years = self.get_years(params.get('state'), params.get('district'))
-        if params.get('years'):
-            params['years'] = [year for year in params['years'] if year in available_years]
-            if not params['years']:
-                params['years'] = available_years  # Use all available years if no valid years are provided
+            # 2. District selection
+            districts = self.get_districts(params['state']) if params['state'] else self.crime_data['district'].unique()
+            print(f"\nAvailable districts:")
+            for i, district in enumerate(sorted(districts), 1):
+                print(f"{i}. {district}")
+            district_input = input("\nEnter district number (or press Enter to skip): ").strip()
+            
+            if district_input:
+                try:
+                    district_idx = int(district_input) - 1
+                    if 0 <= district_idx < len(districts):
+                        params['district'] = sorted(districts)[district_idx]
+                except ValueError:
+                    print("Invalid input. Please try again.")
+                    continue
+
+            # Check if at least one location parameter is provided
+            if not params['state'] and not params['district']:
+                print("\nError: You must specify either a state or a district. Please try again.")
+                continue
+
+        # 3. Year selection
+        available_years = self.get_years(params['state'], params['district'])
+        print("\nAvailable years:", ', '.join(map(str, available_years)))
+        year_input = input("Enter years (comma-separated, or press Enter for all years): ").strip()
+        if year_input:
+            try:
+                params['years'] = [int(y.strip()) for y in year_input.split(',')
+                                 if int(y.strip()) in available_years]
+                if not params['years']:
+                    print("No valid years entered. Using all available years.")
+                    params['years'] = available_years
+            except ValueError:
+                print("Invalid year input. Using all available years.")
+                params['years'] = available_years
         else:
-            params['years'] = available_years  # Use all available years if no years are provided
+            # If no year input, use all available years
+            params['years'] = available_years
 
-        # Validate crimes
-        prevalent_crimes = self.get_prevalent_crimes(params.get('state'), params.get('district'))
-        if params.get('crimes'):
-            params['crimes'] = [crime for crime in params['crimes'] if crime in [c[0] for c in prevalent_crimes]]
-            if not params['crimes']:
-                params['crimes'] = [crime[0] for crime in prevalent_crimes]  # Use all crimes if no valid crimes are provided
-        else:
-            params['crimes'] = [crime[0] for crime in prevalent_crimes]  # Use all crimes if no crimes are provided
+        # 4. Crime type selection
+        prevalent_crimes = self.get_prevalent_crimes(params['state'], params['district'])
+        print("\nCrimes (sorted by prevalence in selected location):")
+        for i, (crime, count) in enumerate(prevalent_crimes, 1):
+            print(f"{i}. {crime.replace('_', ' ').title()} ({count} cases)")
+        crime_input = input("\nEnter crime numbers (comma-separated, or press Enter for all): ").strip()
+        if crime_input:
+            try:
+                selected_indices = [int(i.strip()) - 1 for i in crime_input.split(',')]
+                params['crimes'] = [prevalent_crimes[i][0] for i in selected_indices
+                                  if 0 <= i < len(prevalent_crimes)]
+                if not params['crimes']:
+                    print("No valid crimes selected. Using all crimes.")
+                    params['crimes'] = [crime for crime, _ in prevalent_crimes]
+            except (ValueError, IndexError):
+                print("Invalid crime selection. Using all crimes.")
+                params['crimes'] = [crime for crime, _ in prevalent_crimes]
 
-        # Validate predict_years
-        if params.get('predict_years'):
-            if not (1 <= params['predict_years'] <= 100):
-                raise ValueError("Prediction years must be between 1 and 100.")
+        # 5. Prediction option
+        predict_input = input("\nWould you like to see future predictions? (y/n): ").strip().lower()
+        if predict_input == 'y':
+            while True:
+                try:
+                    years = input("Enter number of years to predict (1-100): ").strip()
+                    years = int(years)
+                    if 1 <= years <= 100:
+                        params['predict_years'] = years
+                        break
+                    print("Please enter a number between 1 and 100.")
+                except ValueError:
+                    print("Please enter a valid number.")
 
         # Generate analysis
         return self.generate_analysis(params)
