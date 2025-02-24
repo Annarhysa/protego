@@ -42,7 +42,7 @@ export default function Home() {
         </Link>
 
         {/* Query Crime Data */}
-        <Link href="/query">
+        <Link href="/ask">
           <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center h-full flex flex-col justify-between">
             <div className="text-4xl text-blue-500 mb-4">🔍</div>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">

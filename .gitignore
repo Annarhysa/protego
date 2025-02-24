@@ -7,3 +7,9 @@ crime-app/build
 crime-app/.env
 crime-app/package-lock.json
 cry
+crime-app/.next/
+crime-app/out/
+crime-app/build
+crime-app/.DS_Store
+crime-app/*.pem
+crime-app/.vercel

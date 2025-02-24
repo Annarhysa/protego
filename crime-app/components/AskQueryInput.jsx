@@ -6,7 +6,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "./ui/
 import { Input } from "./ui/input";
 import { API_URL } from "@/config/constants";
 
-const QueryCrime = () => {
+const AskQueryInput = () => {
   const [query, setQuery] = useState("");
   const [response, setResponse] = useState("");
   const [similarCrimes, setSimilarCrimes] = useState([]);
@@ -83,4 +83,4 @@ const QueryCrime = () => {
   );
 };
 
-export default QueryCrime;
+export default AskQueryInput;

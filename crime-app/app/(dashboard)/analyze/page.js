@@ -1,11 +1,11 @@
 "use client";
-import CrimeForm from "@/components/CrimeForm";
+import CrimeAnalysisInput from "@/components/CrimeAnalysisInput";
 
 const AnalyzePage = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <CrimeForm />
+      <CrimeAnalysisInput />
     </div>
   );
 };

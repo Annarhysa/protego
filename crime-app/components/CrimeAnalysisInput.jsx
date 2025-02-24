@@ -11,7 +11,7 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { API_URL } from "@/config/constants";
 
-const CrimeForm = () => {
+const CrimeAnalysisInput = () => {
   const [state, setState] = useState("");
   const [district, setDistrict] = useState("");
   const [years, setYears] = useState("");
@@ -263,4 +263,4 @@ const CrimeForm = () => {
   );
 };
 
-export default CrimeForm;
+export default CrimeAnalysisInput;

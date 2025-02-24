@@ -42,7 +42,7 @@ export default function DashboardLayout({ children }) {
                 <Link href="/report" className="text-gray-700 hover:text-gray-900 font-medium">
                   Report a Crime
                 </Link>
-                <Link href="/query" className="text-gray-700 hover:text-gray-900 font-medium">
+                <Link href="/ask" className="text-gray-700 hover:text-gray-900 font-medium">
                   Query Crime Data
                 </Link>
               </div>
@@ -58,7 +58,7 @@ export default function DashboardLayout({ children }) {
               <Link href="/report" className="text-gray-700 hover:text-gray-900 font-medium">
                 Report a Crime
               </Link>
-              <Link href="/query" className="text-gray-700 hover:text-gray-900 font-medium">
+              <Link href="/ask" className="text-gray-700 hover:text-gray-900 font-medium">
                 Query Crime Data
               </Link>
             </div>
