@@ -1,0 +1,2488 @@
+{
+    "crime_prevention_recommendations": [
+      {
+        "crime": "child pornography",
+        "scenarios": [
+          {
+            "scenario": "Receiving unsolicited images or videos of children",
+            "recommendations": [
+              "Report to law enforcement immediately (cybercrime unit).",
+              "Do not download, save, or share the material.",
+              "Preserve any evidence, such as sender information and message content.",
+              "Contact the National Center for Missing and Exploited Children (NCMEC)."
+            ]
+          },
+          {
+            "scenario": "Witnessing child pornography online",
+            "recommendations": [
+              "Report the website or content to the platform or internet service provider (ISP).",
+              "Contact the National Center for Missing and Exploited Children (NCMEC).",
+              "Take screenshots as evidence, if possible.",
+              "Do not interact with the content or the individuals involved."
+            ]
+          },
+          {
+            "scenario": "Being approached to create or distribute child pornography",
+            "recommendations": [
+              "Refuse contact immediately.",
+              "Report the approach to law enforcement.",
+              "Save any messages or communication attempts as evidence.",
+              "Seek legal counsel."
+            ]
+          },
+          {
+            "scenario": "Discovering child pornography on a family member's device",
+            "recommendations": [
+              "Secure the device.",
+              "Contact law enforcement to report the situation.",
+              "Consult with child protective services.",
+              "Seek legal counsel."
+            ]
+          },
+          {
+            "scenario": "Becoming aware of a chat room or online forum promoting child pornography",
+            "recommendations": [
+              "Report the chat room or forum to the hosting platform.",
+              "Contact law enforcement with details of the platform and activities.",
+              "Do not engage with the participants in the chat room or forum.",
+              "Preserve any evidence found."
+            ]
+          },
+          {
+            "scenario": "Accidental exposure to child pornography",
+            "recommendations": [
+              "Immediately close the content and clear your browsing history.",
+              "Report the incident to the platform or website.",
+              "If affected, seek counseling or mental health support.",
+              "Ensure antivirus software is up-to-date to prevent future exposure."
+            ]
+          },
+          {
+            "scenario": "Receiving links to potentially harmful sites",
+            "recommendations": [
+              "Never click on suspicious links.",
+              "Report the message to the platform or sender's service.",
+              "Use a spam filter to block unwanted messages.",
+              "Update antivirus software."
+            ]
+          },
+          {
+            "scenario": "Children are approached by strangers online",
+            "recommendations": [
+              "Talk to your kids about the dangers of strangers online.",
+              "Make sure children know to never share personal information online.",
+              "Use parental control software to block questionable sites.",
+              "Know the people who your children are talking to online."
+            ]
+          },
+          {
+            "scenario": "Finding images of your child online",
+            "recommendations": [
+              "Report the images to the website.",
+              "Contact law enforcement immediately.",
+              "Take screenshots of the images.",
+              "Check your child's friends' social media accounts."
+            ]
+          },
+          {
+            "scenario": "Seeing a concerning images of a child online",
+            "recommendations": [
+              "Report the images to the website.",
+              "Contact law enforcement immediately.",
+              "Take screenshots of the images.",
+              "Talk to your child."
+            ]
+          },
+          {
+            "scenario": "Suspect child has been abused online",
+            "recommendations": [
+              "Report the images to the website.",
+              "Contact law enforcement immediately.",
+              "Take screenshots of the images.",
+              "Talk to the parents of the child."
+            ]
+          },
+          {
+            "scenario": "Someone trying to get you to send them a nude image",
+            "recommendations": [
+              "Report the user to the website.",
+              "Block the user.",
+              "Delete the messages.",
+              "Alert your parents."
+            ]
+          },
+          {
+            "scenario": "Concerned about your kids talking to strangers online",
+            "recommendations": [
+              "Talk to your kids about the dangers of strangers online.",
+              "Make sure children know to never share personal information online.",
+              "Use parental control software to block questionable sites.",
+              "Know the people who your children are talking to online."
+            ]
+          },
+          {
+            "scenario": "Worried about your kids getting exposed to sexually explicit material",
+            "recommendations": [
+              "Talk to your kids about the dangers of strangers online.",
+              "Make sure children know to never share personal information online.",
+              "Use parental control software to block questionable sites.",
+              "Know the people who your children are talking to online."
+            ]
+          },
+          {
+            "scenario": "Don't know who your kids are talking to online",
+            "recommendations": [
+              "Talk to your kids about the dangers of strangers online.",
+              "Make sure children know to never share personal information online.",
+              "Use parental control software to block questionable sites.",
+              "Know the people who your children are talking to online."
+            ]
+          },
+          {
+            "scenario": "Child is addicted to pornography",
+            "recommendations": [
+              "Speak to your kids about this addiction.",
+              "Limit their usage of technology.",
+              "Try to talk and connect with your kids.",
+              "Consider counseling."
+            ]
+          },
+          {
+            "scenario": "Concerned about your kids making inappropriate online friends",
+            "recommendations": [
+              "Monitor the friends of your children.",
+              "Check social media profiles of their friends.",
+              "Get to know those friends and their parents.",
+              "Discourage your child from engaging in conversations that feel uncomfortable."
+            ]
+          },
+          {
+            "scenario": "Finding inappropriate content online",
+            "recommendations": [
+              "Block the content that you find inappropriate.",
+              "Report it to the webstite.",
+              "If it comes from messages make sure to delete the thread.",
+              "Don't send the images or videos to others."
+            ]
+          },
+          {
+            "scenario": "Dealing with peer pressure online",
+            "recommendations": [
+              "Stand strong in your beliefs.",
+              "Talk with a parent of a trusted adult.",
+              "Understand the dangers of partaking in online events.",
+              "Avoid participating in activities that make you uncomfortable."
+            ]
+          },
+          {
+            "scenario": "Seeing something online that doesn't feel right",
+            "recommendations": [
+              "Discuss the images or videos with a trusted adult.",
+              "Report it to the website.",
+              "Avoid sharing that video with anyone else.",
+              "Don't click on any harmful links."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "stalking",
+        "scenarios": [
+          {
+            "scenario": "Receiving unwanted and persistent messages online",
+            "recommendations": [
+              "Block the sender immediately.",
+              "Save the messages as evidence.",
+              "Report the user to the platform.",
+              "Contact law enforcement if the behavior escalates."
+            ]
+          },
+          {
+            "scenario": "Discovering someone is tracking your online activity",
+            "recommendations": [
+              "Change your passwords for all online accounts.",
+              "Enable two-factor authentication.",
+              "Review your privacy settings.",
+              "Install anti-spyware software."
+            ]
+          },
+          {
+            "scenario": "A former partner is harassing you online",
+            "recommendations": [
+              "Document all instances of harassment.",
+              "Obtain a restraining order if necessary.",
+              "Inform the platform or ISP about the harassment.",
+              "Seek counseling for emotional support."
+            ]
+          },
+          {
+            "scenario": "Someone is impersonating you online",
+            "recommendations": [
+              "Report the fake profile to the social media platform.",
+              "Alert your contacts about the impersonation.",
+              "File a report with the FTC.",
+              "Monitor your credit report for any suspicious activity."
+            ]
+          },
+          {
+            "scenario": "Receiving threats or intimidation online",
+            "recommendations": [
+              "Report the threats to law enforcement.",
+              "Save all messages and communications as evidence.",
+              "Block the sender.",
+              "Seek support from friends, family, or a counselor."
+            ]
+          },
+          {
+            "scenario": "Constantly getting unwanted online messages",
+            "recommendations": [
+              "Block the users.",
+              "Report the user to the social media website.",
+              "Don't click on any links that the users sends.",
+              "Contact law enforcement if the user begins to stalk you in real life."
+            ]
+          },
+          {
+            "scenario": "Someone you met online is harassing you in real life",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "File a report with the social media company.",
+              "Let your friends and family know what is going on.",
+              "Avoid going anywhere alone."
+            ]
+          },
+          {
+            "scenario": "Worried your personal information has been leaked online",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Change all of your passwords.",
+              "Make sure to update your credit card info.",
+              "File a report with the social media company."
+            ]
+          },
+          {
+            "scenario": "Constantly getting harrassed for your pictures online",
+            "recommendations": [
+              "Report the user to the social media website.",
+              "Block the user.",
+              "Change your profile settings to private.",
+              "Alert your friends and family what is going on."
+            ]
+          },
+          {
+            "scenario": "Someone you know is making a lot of fake accounts of you",
+            "recommendations": [
+              "Report the user to the social media website.",
+              "Block the user.",
+              "Let your friends and family know what is going on.",
+              "Contact law enforcement if the user is a physical threat."
+            ]
+          },
+          {
+            "scenario": "Someone from your past is reaching out online",
+            "recommendations": [
+              "Block the user.",
+              "Don't engage with the user.",
+              "Consider deleting your social media.",
+              "Contact law enforcement if you feel threatened."
+            ]
+          },
+          {
+            "scenario": "Someone has hacked into your social media profile",
+            "recommendations": [
+              "Change your password.",
+              "Report the account to the website.",
+              "Inform your friends about the situation.",
+              "Download any potentially harmful content."
+            ]
+          },
+          {
+            "scenario": "Exposed images from a leak online",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "File a report with the website.",
+              "Let your friends and family know what is going on.",
+              "Consider counseling."
+            ]
+          },
+          {
+            "scenario": "Uncomfortable messages from your boss",
+            "recommendations": [
+              "Contact HR.",
+              "File a claim against your boss.",
+              "Don't respond to those messages.",
+              "Consider going to law enforcement."
+            ]
+          },
+          {
+            "scenario": "Worried about your physical safety at work",
+            "recommendations": [
+              "Talk to HR or your boss.",
+              "File a police report if they make a physical threat.",
+              "Consider getting a restraining order.",
+              "Do not be afraid to stand up for yourself."
+            ]
+          },
+          {
+            "scenario": "Concerned about your children being stalked online",
+            "recommendations": [
+              "Talk to your kids about the dangers of online stalkers.",
+              "Monitor their social media profiles.",
+              "Use parental controls.",
+              "Discuss this with your kids' friends' parents."
+            ]
+          },
+          {
+            "scenario": "Being harrassed for your political beliefs",
+            "recommendations": [
+              "Block the users that are harrassing you.",
+              "Report those users to the website.",
+              "Don't let the comments get you down.",
+              "Stand strong in your beliefs."
+            ]
+          },
+          {
+            "scenario": "Being a victim of a hate crime online",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Report the account to the website.",
+              "Seek counseling.",
+              "Do not let this situation make you afraid to be yourself."
+            ]
+          },
+          {
+            "scenario": "Feeling threatened online",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Report the account to the website.",
+              "Block the account.",
+              "Consider counseling."
+            ]
+          },
+          {
+            "scenario": "Seeing concerning content of your child online",
+            "recommendations": [
+              "Contact the website.",
+              "Report the content to the platform.",
+              "If it involves criminal activity contact law enforcement.",
+              "Make sure your child knows you are there for them."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "job fraud",
+        "scenarios": [
+          {
+            "scenario": "Receiving an unsolicited job offer with high pay and little experience required",
+            "recommendations": [
+              "Be skeptical. Research the company and the position.",
+              "Check the company's legitimacy on the Better Business Bureau (BBB) website.",
+              "Never provide personal financial information upfront."
+            ]
+          },
+          {
+            "scenario": "Being asked to pay for training or equipment before starting a job",
+            "recommendations": [
+              "Treat this as a red flag. Legitimate employers usually cover these costs.",
+              "Ask for a detailed explanation of the costs and why they are necessary.",
+              "Compare the costs with similar job opportunities."
+            ]
+          },
+          {
+            "scenario": "Spotting a job posting with grammatical errors and unprofessional language",
+            "recommendations": [
+              "Approach with caution. This is a common sign of a scam.",
+              "Verify the company's contact information and website.",
+              "Look for consistent branding and professional communication."
+            ]
+          },
+          {
+            "scenario": "Being pressured to make a quick decision without proper screening",
+            "recommendations": [
+              "Take your time. A legitimate employer will allow you to consider the offer.",
+              "Request a formal job description and contract.",
+              "Consult with a career advisor or mentor."
+            ]
+          },
+          {
+            "scenario": "Encountering a recruiter or employer who is difficult to reach or provides vague answers",
+            "recommendations": [
+              "Seek clarity on their role and the company's background.",
+              "Request a phone call or video interview.",
+              "Look for reviews or testimonials from other employees."
+            ]
+          },
+          {
+            "scenario": "A supposed employer asking you for money",
+            "recommendations": [
+              "DO NOT SEND THEM MONEY.",
+              "Cut off contact immediately.",
+              "Report the user to the job website.",
+              "Contact law enforcement if they have sensitive data."
+            ]
+          },
+          {
+            "scenario": "Getting contacted through an unofficial website",
+            "recommendations": [
+              "Hang up the phone immediately.",
+              "Check the person's phone number.",
+              "Report this to the official company.",
+              "Change your passwords if they know your email."
+            ]
+          },
+          {
+            "scenario": "Someone you met online asks you to wire them money",
+            "recommendations": [
+              "DO NOT SEND THEM MONEY.",
+              "Cut off contact immediately.",
+              "Report the user to the job website.",
+              "Contact law enforcement if they have sensitive data."
+            ]
+          },
+          {
+            "scenario": "A fake company sends you a check to work for them",
+            "recommendations": [
+              "DO NOT CASH THAT CHECK.",
+              "Report the user to the job website.",
+              "Contact law enforcement if they have sensitive data.",
+              "Let your bank know what happened."
+            ]
+          },
+          {
+            "scenario": "Someone asks for your bank account or credit card info",
+            "recommendations": [
+              "DO NOT SEND THEM MONEY.",
+              "Cut off contact immediately.",
+              "Report the user to the job website.",
+              "Contact law enforcement if they have sensitive data."
+            ]
+          },
+          {
+            "scenario": "A supposed employer is asking you for inappropriate photos",
+            "recommendations": [
+              "Cut off contact immediately.",
+              "Report the user to the job website.",
+              "Contact law enforcement immediately.",
+              "Make sure to block that user."
+            ]
+          },
+          {
+            "scenario": "Someone is contacting you with threats about a job",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Report the user to the job website.",
+              "Block that user.",
+              "Document all of the messages they are sending."
+            ]
+          },
+          {
+            "scenario": "A job posting is wanting to see only people from a specific demographic",
+            "recommendations": [
+              "Report this to the website.",
+              "That is discrimation and is illegal.",
+              "Let your friends know what is happening.",
+              "Try to get other people from that demographic to report it as well."
+            ]
+          },
+          {
+            "scenario": "Finding an error online",
+            "recommendations": [
+              "Ignore the supposed employer.",
+              "They obviously are not very proffesional.",
+              "Report that posting to the job website.",
+              "Avoid that job posting at all cost."
+            ]
+          },
+          {
+            "scenario": "Finding the wrong phone number for an employer online",
+            "recommendations": [
+              "Ignore the supposed employer.",
+              "They obviously are not very proffesional.",
+              "Report that posting to the job website.",
+              "Avoid that job posting at all cost."
+            ]
+          },
+          {
+            "scenario": "A job posting with a crazy good offer",
+            "recommendations": [
+              "Ignore the supposed employer.",
+              "It is probably not real and they will ask for money or banking info later.",
+              "Report that posting to the job website.",
+              "Avoid that job posting at all cost."
+            ]
+          },
+          {
+            "scenario": "Worried you have been scammed of your money for a job",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Report it to the website.",
+              "Contact your bank to see if they can refund you.",
+              "Contact a trusted adult for assistance."
+            ]
+          },
+          {
+            "scenario": "Being asked about your immigration or ethnic heritage",
+            "recommendations": [
+              "Report the posting to the website.",
+              "Discrimation is not only wrong it is illegal.",
+              "Avoid the post.",
+              "Get a lawyer if they don't hire you because of this."
+            ]
+          },
+          {
+            "scenario": "Someone is contacting you about a job and you are a minor",
+            "recommendations": [
+              "Tell your parents immediately",
+              "Contact law enforcement if they are asking about anything inappropriate",
+              "Avoid that posting at all costs",
+              "There are a lot of people out there that want to take advantage of younger people."
+            ]
+          },
+          {
+            "scenario": "They ask you to send sensitive documents with your SSN",
+            "recommendations": [
+              "It's possible the company isn't real",
+              "Cut off contact immediately",
+              "Research more on the job website",
+              "Ask your parents what they would recommend"
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "vishing",
+        "scenarios": [
+          {
+            "scenario": "Receiving a call from someone claiming to be from your bank requesting your ATM PIN",
+            "recommendations": [
+              "Hang up immediately. Your bank will never ask for your PIN over the phone.",
+              "Call your bank directly using the number on your card to verify the call.",
+              "Report the incident to your bank's fraud department."
+            ]
+          },
+          {
+            "scenario": "A caller states they are from the IRS and demand immediate payment to avoid legal action",
+            "recommendations": [
+              "Hang up. The IRS typically contacts taxpayers via mail.",
+              "Report the call to the IRS impersonation hotline.",
+              "Never provide personal or financial information over the phone without verifying the caller's identity."
+            ]
+          },
+          {
+            "scenario": "Someone claims to be a tech support representative needing remote access to your computer",
+            "recommendations": [
+              "Refuse access. Legitimate tech support will not ask for remote access unsolicited.",
+              "Run a scan with your antivirus software.",
+              "Change your passwords for all online accounts."
+            ]
+          },
+          {
+            "scenario": "A caller offers a prize or sweepstakes winnings but requires you to pay a fee to claim it",
+            "recommendations": [
+              "Be cautious. This is a common scam tactic.",
+              "Never provide personal or financial information to claim a prize.",
+              "Report the call to the FTC."
+            ]
+          },
+          {
+            "scenario": "Receiving a call about suspicious activity on your credit card but they need your card number to verify",
+            "recommendations": [
+              "Hang up. Contact your bank directly to inquire about the suspicious activity.",
+              "Never provide your card number to an unverified caller.",
+              "Monitor your credit card statements regularly."
+            ]
+          },
+          {
+            "scenario": "A caller is saying that you have won money",
+            "recommendations": [
+              "DO NOT PROVIDE PERSONAL INFORMATION",
+              "Hang up immediately",
+              "Ask you trusted adults what to do.",
+              "Report the account online."
+            ]
+          },
+          {
+            "scenario": "A caller you don't know is threatening to take legal action",
+            "recommendations": [
+              "Hang up immediately",
+              "Contact law enforcement if you are worried about your safety",
+              "DO NOT PROVIDE PERSONAL INFORMATION",
+              "Don't let them scare you into doing something you don't want to."
+            ]
+          },
+          {
+            "scenario": "An online message or call seems too good to be true",
+            "recommendations": [
+              "Research the information online",
+              "Contact law enforcement",
+              "Tell your parents what happened",
+              "Always stay safe online."
+            ]
+          },
+          {
+            "scenario": "Someone is asking for personal information so you can receive a large sum of money",
+            "recommendations": [
+              "Contact law enforcement immediately",
+              "Block the user",
+              "DO NOT PROVIDE PERSONAL INFORMATION",
+              "Delete the messages."
+            ]
+          },
+          {
+            "scenario": "Someone says your card has suspicious activity but needs more personal information",
+            "recommendations": [
+              "Hang up and call your bank",
+              "Contact law enforcement",
+              "Delete any mesages they have sent you",
+              "Block the number from contacting you."
+            ]
+          },
+          {
+            "scenario": "A caller that seems aggressive with demands",
+            "recommendations": [
+              "Hang up immediately",
+              "Contact law enforcement if you are worried about your safety",
+              "DO NOT PROVIDE PERSONAL INFORMATION",
+              "Don't let them scare you into doing something you don't want to."
+            ]
+          },
+          {
+            "scenario": "Getting a call from a number you don't know",
+            "recommendations": [
+              "Don't answer the phone",
+              "There is a good chance it is a scam.",
+              "If you are worried check the phone number online",
+              "If they need to contact you they will leave a voicemail."
+            ]
+          },
+          {
+            "scenario": "An unknown number messages you about needing your personal information",
+            "recommendations": [
+              "Block the number",
+              "Report it to the website",
+              "Delete the messages",
+              "Tell your trusted friends what happened."
+            ]
+          },
+          {
+            "scenario": "Someone says you are on the list of most wanted people",
+            "recommendations": [
+              "Don't provide personal information",
+              "They are trying to scare you to scam you",
+              "Contact law enforcement",
+              "Avoid any further contact with that user."
+            ]
+          },
+          {
+            "scenario": "Seeing a message online that doesn't feel right",
+            "recommendations": [
+              "Block the number",
+              "Report it to the website",
+              "Delete the messages",
+              "Tell your trusted friends what happened."
+            ]
+          },
+          {
+            "scenario": "A trusted account contacts you online and asks for personal information",
+            "recommendations": [
+              "Call the person and make sure it is them",
+              "If they didn't send the message do not share personal information",
+              "Report the fake account to the website",
+              "Let trusted freinds know there are people making fake accounts online."
+            ]
+          },
+          {
+            "scenario": "Someone threatening you with legal action if you don't pay them",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Block the user",
+              "If it involves a court case hire a lawyer.",
+              "Consult with a friend or adult."
+            ]
+          },
+          {
+            "scenario": "Seeing something online that doesn't feel right or too good to be true",
+            "recommendations": [
+              "Research the information online",
+              "Contact law enforcement",
+              "Tell your parents what happened",
+              "Always stay safe online."
+            ]
+          },
+          {
+            "scenario": "Told you got a call from a real organization and your details are not safe",
+            "recommendations": [
+              "Hang up immediatly",
+              "Research on organization to see if real.",
+              "Tell the organization and ask them how to prevent."
+            ]
+          },
+          {
+            "scenario": "A friend got his account taken and is asking you for personal information",
+            "recommendations": [
+              "Contact your friend on your own",
+              "Get law enforcement if its too bad",
+              "Be safe and don't provide details"
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "impersonation and identity theft",
+        "scenarios": [
+          {
+            "scenario": "Receiving an email from a fake bank asking for your account details",
+            "recommendations": [
+              "Do not click on any links in the email. Contact your bank directly.",
+              "Report the phishing email to your bank and the FTC.",
+              "Change your online banking password."
+            ]
+          },
+          {
+            "scenario": "Discovering someone has opened a credit card in your name",
+            "recommendations": [
+              "Contact the credit reporting agencies to place a fraud alert on your credit report.",
+              "File a report with the FTC.",
+              "Contact the credit card company to close the fraudulent account."
+            ]
+          },
+          {
+            "scenario": "Your social security number (SSN) has been compromised",
+            "recommendations": [
+              "Contact the Social Security Administration to report the theft.",
+              "Monitor your credit report for any suspicious activity.",
+              "Consider placing a credit freeze on your credit report."
+            ]
+          },
+          {
+            "scenario": "Someone has filed a tax return using your SSN",
+            "recommendations": [
+              "Contact the IRS immediately.",
+              "File an identity theft affidavit with the IRS.",
+              "Consider filing a police report."
+            ]
+          },
+          {
+            "scenario": "Finding fraudulent charges on your credit card",
+            "recommendations": [
+              "Report the charges to your credit card company immediately.",
+              "Request a new credit card with a new number.",
+              "Monitor your credit card statements regularly."
+            ]
+          },
+          {
+            "scenario": "There are charges on your credit card you don't recognize",
+            "recommendations": [
+              "Call your bank",
+              "Check your emails to see if you made any purchases",
+              "Monitor your bank statements",
+              "Get a new credit card."
+            ]
+          },
+          {
+            "scenario": "Social Security number has been leaked",
+            "recommendations": [
+              "Call the social security office",
+              "Report the leak to the police",
+              "Freeze your credit card",
+              "Check you bank records."
+            ]
+          },
+          {
+            "scenario": "Getting scammed into sharing your personal info",
+            "recommendations": [
+              "Change all of your passwords.",
+              "Alert your bank that your information may have been compromised.",
+              "Report it to the FTC.",
+              "Freeze your credit card."
+            ]
+          },
+          {
+            "scenario": "Someone is asking you about a loved one's personal information",
+            "recommendations": [
+              "Don't provide personal information",
+              "Research if the person is real",
+              "Contact law enforcement",
+              "Report the account."
+            ]
+          },
+          {
+            "scenario": "Personal information on a device is not protected",
+            "recommendations": [
+              "Install antivirus software.",
+              "Change your password.",
+              "Report the leak to the police",
+              "Freeze your credit card."
+            ]
+          },
+          {
+            "scenario": "An email address is requesting your personal information",
+            "recommendations": [
+              "Report the account to the website",
+              "Delete any links they provide",
+              "Change your password",
+              "Freeze your credit card."
+            ]
+          },
+          {
+            "scenario": "Suspect your email has been hacked",
+            "recommendations": [
+              "Change your password",
+              "Use two factor authentication",
+              "Update your phone number",
+              "Be careful who you give your info to."
+            ]
+          },
+          {
+            "scenario": "Suspect someone has hacked into a family member's phone",
+            "recommendations": [
+              "Install antivirus software.",
+              "Contact law enforcement",
+              "Let your bank know there has been fraud",
+              "Change your passwords."
+            ]
+          },
+          {
+            "scenario": "Suspicious emails come from a business you are familiar with",
+            "recommendations": [
+              "Call the business and make sure it is them",
+              "Contact law enforcement if fraud has occurred.",
+              "Avoid clicking on any links",
+              "Use antivirus software."
+            ]
+          },
+          {
+            "scenario": "Personal document has been stolen in the mail",
+            "recommendations": [
+              "Call your social security office",
+              "Call the DMV",
+              "Tell your bank and credit card company",
+              "Report the incident to law enforcement."
+            ]
+          },
+          {
+            "scenario": "Worried that your bank accound has been compromised",
+            "recommendations": [
+              "Contact the bank",
+              "Report it to law enforcement",
+              "Report it to the Federal Trade commision",
+              "Change your password."
+            ]
+          },
+          {
+            "scenario": "Personal info has been leaked online",
+            "recommendations": [
+              "Change all of your passwords",
+              "Contact law enforcement",
+              "Report it to the website",
+              "Monitor your credit card."
+            ]
+          },
+          {
+            "scenario": "Seeing suspicious activity on your kid's social media account",
+            "recommendations": [
+              "Talk to your kid about the dangers of strangers online",
+              "Monitor who is talking to your kid",
+              "Use parental controls",
+              "Contact law enforcement if there are any signs of danger."
+            ]
+          },
+          {
+            "scenario": "Suspecting your kid has had their personal information stolen",
+            "recommendations": [
+              "Talk to your kid about the dangers of strangers online",
+              "Monitor who is talking to your kid",
+              "Use parental controls",
+              "Contact law enforcement if there are any signs of danger."
+            ]
+          },
+          {
+            "scenario": "Suspect you have been sent fake emails or SMS from real companies",
+            "recommendations": [
+              "Double check number phone number or email is a real organization",
+              "If not real, contact the real company",
+              "Contact bank to prevent",
+              "Contact law enforcement if you feel it's too bad"
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "phishing",
+        "scenarios": [
+          {
+            "scenario": "Receiving an email claiming your bank account has been compromised and asking you to verify your login details",
+            "recommendations": [
+              "Do not click on any links in the email. Contact your bank directly.",
+              "Report the phishing email to your bank and the FTC.",
+              "Change your online banking password."
+            ]
+          },
+          {
+            "scenario": "Being directed to a fake website that looks identical to a legitimate one",
+            "recommendations": [
+              "Verify the website's URL. Phishing sites often use misspelled or slightly altered URLs.",
+              "Check for a secure connection (HTTPS) before entering any personal information.",
+              "Use a password manager to detect fake login pages."
+            ]
+          },
+          {
+            "scenario": "An email asks you to update your credit card information for a subscription service you use",
+            "recommendations": [
+              "Log in to your account directly through the official website, not through the email.",
+              "Report the phishing email to the subscription service.",
+              "Monitor your credit card statements for unauthorized charges."
+            ]
+          },
+          {
+            "scenario": "Receiving an urgent email claiming you have won a lottery or prize and need to pay a fee to claim it",
+            "recommendations": [
+              "Be cautious. This is a common scam tactic.",
+              "Never provide personal or financial information to claim a prize.",
+              "Report the email to the FTC."
+            ]
+          },
+          {
+            "scenario": "An email warns you that your account will be suspended if you don't take immediate action",
+            "recommendations": [
+              "Contact the company directly to verify the email's authenticity.",
+              "Check your account settings and security preferences.",
+              "Enable two-factor authentication for added security."
+            ]
+          },
+          {
+            "scenario": "They want your personal info to send you money",
+            "recommendations": [
+              "Report the message online",
+              "Contact law enforcement",
+              "Research the account asking you for info",
+              "Never believe it is true and never provide personal information."
+            ]
+          },
+          {
+            "scenario": "Your bank asks you to provide you personal info",
+            "recommendations": [
+              "Report the message online",
+              "Look up the phone number for your bank.",
+              "Call that number, they will never ask for personal info",
+              "Visit your local branch."
+            ]
+          },
+          {
+            "scenario": "See a fake link online",
+            "recommendations": [
+              "Research the account online",
+              "Double check the URL",
+              "Block the account",
+              "Get a real antivirus software."
+            ]
+          },
+          {
+            "scenario": "Getting an email that seems legit",
+            "recommendations": [
+              "Contact the company that sent the email",
+              "Make sure it is a real email address",
+              "Research the email address online",
+              "Check with your friends and family."
+            ]
+          },
+          {
+            "scenario": "Social media accouny asks to verify personal info",
+            "recommendations": [
+              "Avoid clicking on any links",
+              "Go directly to the website",
+              "If it is a fake profile report that account.",
+              "There is a chance it is a hacker."
+            ]
+          },
+          {
+            "scenario": "Unknown number messages you asking about personal information",
+            "recommendations": [
+              "Block that account",
+              "Report that account",
+              "Delete any mesages that user sends",
+              "Never talk to accounts like that."
+            ]
+          },
+          {
+            "scenario": "Phone messages come from an email address",
+            "recommendations": [
+              "There is a good chance that this is a scam",
+              "Don't click on any links",
+              "Report the email",
+              "Report the number."
+            ]
+          },
+          {
+            "scenario": "Messages ask for your personal info",
+            "recommendations": [
+              "Make sure the account is secure",
+              "Double check the website is a secure URL",
+              "Let your freinds know about the scam",
+              "Report the number or email."
+            ]
+          },
+          {
+            "scenario": "A contact has been compromised",
+            "recommendations": [
+              "Research what is going on",
+              "Tell them what happened",
+              "Block the hacker",
+              "Change your password."
+            ]
+          },
+          {
+            "scenario": "A link says you have won a giftcard",
+            "recommendations": [
+              "Don't click that link",
+              "Report it to the website",
+              "Block that profile",
+              "Let your freinds know about the scam."
+            ]
+          },
+          {
+            "scenario": "An email from a company has bad grammer",
+            "recommendations": [
+              "That is most likely a scam",
+              "Report the account",
+              "Block the email",
+              "Avoid clicking any links."
+            ]
+          },
+          {
+            "scenario": "Not sure if the message is real",
+            "recommendations": [
+              "Call the company directly",
+              "Research the information",
+              "Check with your freinds and family",
+              "Make sure the user is secure."
+            ]
+          },
+          {
+            "scenario": "Receiving an email you aren't expecting",
+            "recommendations": [
+              "Delete the account",
+              "Report the account",
+              "Avoid clicking any links",
+              "Don't make contact."
+            ]
+          },
+          {
+            "scenario": "Unknown source is claiming to be an email address",
+            "recommendations": [
+              "Check the email number on the phone",
+              "Copy the email to search it in google",
+              "If weird contact the real organization",
+              "Report or block the account."
+            ]
+          },
+          {
+            "scenario": "Asked to share a personal key",
+            "recommendations": [
+              "If you're not applying for the key just ignore it, it can cause harm",
+              "Research online to see if real",
+              "Report the fake message",
+              "Stay safe online."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "ransomware",
+        "scenarios": [
+          {
+            "scenario": "Opening an email attachment from an unknown sender",
+            "recommendations": [
+              "Be cautious. Verify the sender's identity before opening attachments.",
+              "Scan the attachment with antivirus software before opening.",
+              "Avoid enabling macros in attachments from unknown sources."
+            ]
+          },
+          {
+            "scenario": "Clicking on a suspicious link in an email or on a website",
+            "recommendations": [
+              "Verify the URL before clicking.",
+              "Avoid clicking on links from unknown sources.",
+              "Use a browser extension to block malicious websites."
+            ]
+          },
+          {
+            "scenario": "Not having up-to-date antivirus software",
+            "recommendations": [
+              "Install a reputable antivirus software and keep it updated.",
+              "Run regular scans to detect and remove malware.",
+              "Enable real-time protection to prevent infections."
+            ]
+          },
+          {
+            "scenario": "Using outdated software or operating systems",
+            "recommendations": [
+              "Keep your software and operating systems up to date with the latest security patches.",
+              "Enable automatic updates to ensure you have the latest protections.",
+              "Retire outdated software that is no longer supported."
+            ]
+          },
+          {
+            "scenario": "Not backing up your data regularly",
+            "recommendations": [
+              "Back up your data regularly to an external hard drive or cloud storage.",
+              "Test your backups to ensure they can be restored successfully.",
+              "Store your backups offline to prevent them from being encrypted by ransomware."
+            ]
+          },
+          {
+            "scenario": "Unknown software asks for personal data",
+            "recommendations": [
+              "DO NOT PROVIDE PERSONAL INFORMATION",
+              "Uninstall that software",
+              "Run a virus scan",
+              "Contact law enforcement."
+            ]
+          },
+          {
+            "scenario": "A message says your data has been encrypted",
+            "recommendations": [
+              "Contact law enforcement immediately",
+              "Report the email address",
+              "Disconnect from the wifi",
+              "DO NOT PAY THE RANSOM."
+            ]
+          },
+          {
+            "scenario": "See a link online says you have won something",
+            "recommendations": [
+              "There is a good chance it is ransomware",
+              "Run a virus scan",
+              "Monitor your data",
+              "Back up your data to a hard drive that is safe."
+            ]
+          },
+          {
+            "scenario": "Software doesn't work so it asks to make changes",
+            "recommendations": [
+              "There is a good chance it is ransomware",
+              "Run a virus scan",
+              "Uninstall that program",
+              "Restart your computer."
+            ]
+          },
+          {
+            "scenario": "Your computer acts weird after downloading some files",
+            "recommendations": [
+              "There is a good chance it is ransomware",
+              "Run a virus scan",
+              "Uninstall that program",
+              "Restart your computer."
+            ]
+          },
+          {
+            "scenario": "Don't know what websites your kids are visiting",
+            "recommendations": [
+              "Check your kids' social media",
+              "Monitor which websites they visit",
+              "Talk to them about the dangers of ransomware",
+              "Use parental controls."
+            ]
+          },
+          {
+            "scenario": "Computer asks you to take over the screen",
+            "recommendations": [
+              "Uninstall that program",
+              "Run a virus scan",
+              "Contact law enforcement",
+              "Check your device to see if there are any issues."
+            ]
+          },
+          {
+            "scenario": "Someone says you have done something wrong",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Block that account",
+              "Monitor your data to see if there have been any issues",
+              "Take photos of their threats."
+            ]
+          },
+          {
+            "scenario": "Finding out your computer has been hacked and is running weird",
+            "recommendations": [
+              "Run a virus scan",
+              "Restart your computer",
+              "Monitor your bank accounts",
+              "Contact law enforcement."
+            ]
+          },
+          {
+            "scenario": "Downloaded a bad file",
+            "recommendations": [
+              "Run a virus scan",
+              "Restart your computer",
+              "Monitor your data",
+              "Let your friends know."
+            ]
+          },
+          {
+            "scenario": "The app asks to manage your personal files",
+            "recommendations": [
+              "Be cautious if you installed it from a 3rd party app.",
+              "Let law enforcment know if this happened",
+              "Run a virus scan",
+              "Monitor your data to see if there have been any issues."
+            ]
+          },
+          {
+            "scenario": "You were contacted and told your data isn't safe",
+            "recommendations": [
+              "DO NOT PAY THEM",
+              "There is nothing they can do about it",
+              "Contact law enforcement",
+              "Monitor your data to see if there have been any issues."
+            ]
+          },
+          {
+            "scenario": "Someone threatens your life",
+            "recommendations": [
+              "Call the authorities immediately.",
+              "Block them and save the evidence.",
+              "Research online for a good defense lawyer and contact.",
+              "Contact trusted adults for assistance if need be."
+            ]
+          },
+          {
+            "scenario": "If you receive calls or messages of your files being deleted",
+            "recommendations": [
+              "Turn off the internet right away",
+              "Restart the pc to get rid of it.",
+              "Look at previous backups to regain",
+              "Install antivirus and contact the local police."
+            ]
+          },
+          {
+            "scenario": "If a program has been compromised and needs the computer turn off",
+            "recommendations": [
+              "Find more about the program if trusted.",
+              "Contact the company and see what happen.",
+              "Be safe online and don't click harmful links"
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "data breach",
+        "scenarios": [
+          {
+            "scenario": "Receiving a notification from a company that your account information may have been exposed",
+            "recommendations": [
+              "Change your password for that account and any other accounts using the same password.",
+              "Monitor your credit report for any suspicious activity.",
+              "Enable two-factor authentication for added security."
+            ]
+          },
+          {
+            "scenario": "Discovering your personal information has been posted online",
+            "recommendations": [
+              "Contact the website or platform to request the removal of your information.",
+              "Monitor your credit report for any fraudulent activity.",
+              "Consider placing a credit freeze on your credit report."
+            ]
+          },
+          {
+            "scenario": "Your email address has been included in a list of breached accounts",
+            "recommendations": [
+              "Change your password for your email account and any other accounts using the same password.",
+              "Enable two-factor authentication for added security.",
+              "Monitor your email for phishing attempts."
+            ]
+          },
+          {
+            "scenario": "An unauthorized transaction appears on your bank statement",
+            "recommendations": [
+              "Contact your bank immediately to report the fraudulent transaction.",
+              "Request a new debit card with a new number.",
+              "Monitor your bank account regularly."
+            ]
+          },
+          {
+            "scenario": "You receive an alert that someone has tried to open a new account in your name",
+            "recommendations": [
+              "Contact the credit reporting agencies to place a fraud alert on your credit report.",
+              "File a report with the FTC (Federal Trade Commission).",
+              "Monitor your credit report for any unauthorized activity."
+            ]
+          },
+          {
+            "scenario": "Finding out that personal data was leaked during a data breach",
+            "recommendations": [
+              "Change passwords for all affected accounts immediately.",
+              "Set up alerts on your financial accounts to monitor for unusual activity.",
+              "Consider using identity theft protection services."
+            ]
+          },
+          {
+            "scenario": "Receiving unsolicited calls or messages asking for personal information after a breach",
+            "recommendations": [
+              "Do not provide any personal information over the phone or via text.",
+              "Hang up and verify the caller's identity by contacting the company directly.",
+              "Report suspicious calls to the authorities."
+            ]
+          },
+          {
+            "scenario": "Discovering that sensitive personal documents have been stolen",
+            "recommendations": [
+              "Report the theft to law enforcement immediately.",
+              "Cancel any affected accounts or services linked to the stolen documents.",
+              "Consider placing a fraud alert or credit freeze on your credit report."
+            ]
+          },
+          {
+            "scenario": "Receiving phishing emails related to a data breach",
+            "recommendations": [
+              "Do not click on any links or download attachments from suspicious emails.",
+              "Report phishing attempts to the email provider and relevant authorities.",
+              "Regularly update passwords and security questions on sensitive accounts."
+            ]
+          },
+          {
+            "scenario": "Noticing strange activity on social media accounts after a breach",
+            "recommendations": [
+              "Change passwords immediately and enable two-factor authentication.",
+              "Review account settings for any unauthorized changes.",
+              "Inform friends or followers about potential scams originating from your account."
+            ]
+          },
+          {
+            "scenario": "Being notified by an employer about a data breach affecting employee information",
+            "recommendations": [
+              "Follow any instructions provided by the employer regarding monitoring and securing personal data.",
+              "Change passwords for work-related accounts and personal accounts as necessary.",
+              "Stay informed about updates related to the breach from your employer."
+            ]
+          },
+          {
+            "scenario": "Seeing unauthorized access attempts on online accounts after a breach",
+            "recommendations": [
+              "Immediately change passwords for affected accounts and enable two-factor authentication.",
+              "Review account activity logs for any unauthorized transactions or changes.",
+              "Contact customer support of the affected service providers if you notice suspicious activity."
+            ]
+          },
+          {
+            "scenario": "Receiving notifications from credit monitoring services about unusual inquiries",
+            "recommendations": [
+              "Investigate each inquiry to determine if it was authorized or fraudulent.",
+              "Place fraud alerts with credit reporting agencies if you suspect identity theft.",
+              "Consider freezing your credit if you notice multiple suspicious inquiries."
+            ]
+          },
+          {
+            "scenario": "Finding out that login credentials have been leaked in a data breach",
+            "recommendations": [
+              "Change passwords immediately for all affected accounts, especially financial ones.",
+              "Use a password manager to generate strong, unique passwords for each account.",
+              "Enable two-factor authentication wherever possible."
+            ]
+          },
+          {
+            "scenario": "Being targeted by scammers claiming to help after a data breach",
+            "recommendations": [
+              "Do not engage with unsolicited offers of help regarding data breaches.",
+              "Verify any claims by contacting official organizations directly.",
+              "Report scams to relevant authorities, such as the FTC or local law enforcement."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "online drug trafficking",
+        "scenarios": [
+          {
+            "scenario": "Receiving unsolicited messages or emails advertising drugs",
+            "recommendations": [
+              "Report the message to the platform or email provider.",
+              "Block the sender.",
+              "Do not click on any links or respond to the message."
+            ]
+          },
+          {
+            "scenario": "Seeing suspicious posts or advertisements on social media",
+            "recommendations": [
+              "Report the post to the platform.",
+              "Avoid engaging with the content.",
+              "Be wary of profiles or pages promoting illegal activities."
+            ]
+          },
+          {
+            "scenario": "Being asked to purchase or distribute drugs online",
+            "recommendations": [
+              "Refuse the request.",
+              "Report the user to the platform.",
+              "Contact law enforcement with details of the interaction."
+            ]
+          },
+          {
+            "scenario": "Discovering a website or online forum selling drugs",
+            "recommendations": [
+              "Report the website to your local law enforcement.",
+              "Avoid the website.",
+              "Do not engage in activities that could be considered illegal."
+            ]
+          },
+          {
+            "scenario": "Finding suspicious packages",
+            "recommendations": [
+              "Contact law enforcement immediately",
+              "Report the website",
+              "Avoid touching or opening the package",
+              "Inform trusted authorities."
+            ]
+          },
+          {
+            "scenario": "Someone claims that if you don't sell the drugs your family will be harmed",
+            "recommendations": [
+              "Call the authorities immediately",
+              "Contact law enforcement",
+              "Report the incident to the website",
+              "Monitor your situation and inform friends about the activity."
+            ]
+          },
+          {
+            "scenario": "Worried about online behavior",
+            "recommendations": [
+              "Tell trusted adults",
+              "Don't click on links or websites",
+              "Contact help online or in person."
+            ]
+          },
+          {
+            "scenario": "A friend has become addicted",
+            "recommendations": [
+              "Offer support",
+              "Contact his parents",
+              "Contact help for you and your friend",
+              "Tell friends about the information."
+            ]
+          },
+          {
+            "scenario": "Friends on a site online are promoting illegal activity",
+            "recommendations": [
+              "Avoid going to these sites",
+              "Report them to the police",
+              "Tell trusted authorities and trusted freinds."
+            ]
+          },
+          {
+            "scenario": "Not sure if your family or friend is doing drugs",
+            "recommendations": [
+              "Stay strong and seek for their best interest",
+              "Offer to talk to them",
+              "Make them feel safe so they can tell you anything",
+              "Provide support."
+            ]
+          },
+          {
+            "scenario": "See illegal drugs in the mail",
+            "recommendations": [
+              "Let law enforcement",
+              "Avoid touching or moving illegal substances.",
+              "Wash any area you think might've been exposed",
+              "Inform authorities."
+            ]
+          },
+          {
+            "scenario": "Not sure where your kid is going when they leave",
+            "recommendations": [
+              "Talk with your child",
+              "Make a plan to stay in contact",
+              "Let their trusted friends know what happened and see if they can provide assistance",
+              "Don't be afraid to ask for help."
+            ]
+          },
+          {
+            "scenario": "Someone said they would get you money if you delivered drugs.",
+            "recommendations": [
+              "Avoid touching the drugs and providing assistance to that individual",
+              "Contact law enforcement",
+              "There are a lot of other oportunities to make money.",
+              "Seek out a guidance person to provide assistance"
+            ]
+          },
+          {
+            "scenario": "Online person asked you to use your car for delivery.",
+            "recommendations": [
+              "Avoid using your car for this",
+              "They are taking advantage of your situation",
+              "Report this instance to law enforcement",
+              "Look for alternate ways to deliver."
+            ]
+          },
+          {
+            "scenario": "Someone contacted you and told you that your name will be in jeopardy",
+            "recommendations": [
+              "Don't get scammed or talked into this situation",
+              "Reach out to law enforcement and see whats the best course of action for this",
+              "Research online about this case",
+              "Let your lawyer and CPA know to see what legal or business impacts are on your name or legal status."
+            ]
+          },
+          {
+            "scenario": "Selling drugs but not doing it in person is not as illegal",
+            "recommendations": [
+              "The truth is that it is just as illegal",
+              "Don't do it",
+              "There is a lot of long term effects if you were to get caught",
+              "It would be illegal for the person or the distributor."
+            ]
+          },
+          {
+            "scenario": "Friends trying to talk to you selling drugs online",
+            "recommendations": [
+              "Tell them not to do it",
+              "If they feel threatened reach out to law enforcement with them",
+              "Provide assistance and offer guidance",
+              "Report them if they get violent."
+            ]
+          },
+          {
+            "scenario": "Friends doing it but asked you to not say anything",
+            "recommendations": [
+              "Encourage them to do it",
+              "Inform police",
+              "Let their parents now",
+              "See where they are getting it and see if a pattern emerges."
+            ]
+          },
+          {
+            "scenario": "Family or trusted friend says there are no long term effects on using a illegal substances online",
+            "recommendations": [
+              "There are long term effects, research online or seek guidence from a doctor.",
+              "If they feel threatened reach out to law enforcement with them",
+              "Provide assistance and offer guidance",
+              "Report them if they get violent."
+            ]
+          },
+          {
+            "scenario": "If there is an instance contact law enforcement",
+            "recommendations": [
+              "Tell the family member",
+              "Report the event",
+              "Offer assistance",
+              "Contact local trusted friend."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "rape",
+        "scenarios": [
+          {
+            "scenario": "Being pressured into sexual activity when you don't want to",
+            "recommendations": [
+              "Say no firmly.",
+              "Remove yourself from the situation.",
+              "Trust your instincts.",
+              "Seek support from a trusted friend, family member, or counselor."
+            ]
+          },
+          {
+            "scenario": "Feeling unsafe in a social situation",
+            "recommendations": [
+              "Stay with a group of friends.",
+              "Avoid being alone with someone you don't trust.",
+              "Be aware of your surroundings.",
+              "If you feel threatened, leave immediately."
+            ]
+          },
+          {
+            "scenario": "Experiencing unwanted touching or advances",
+            "recommendations": [
+              "Tell the person to stop.",
+              "Create physical distance.",
+              "Report the behavior to authorities or HR if it occurs in a workplace.",
+              "Seek legal counsel if you believe your rights have been violated."
+            ]
+          },
+          {
+            "scenario": "Worrying about someone you know has been attacked",
+            "recommendations": [
+              "Tell a trusted friend about the situation or details.",
+              "Offer your support to those people who need it.",
+              "Ask authorities for direction and follow their lead",
+              "Know that you are strong."
+            ]
+          },
+          {
+            "scenario": "Not sure about where to tell people or what to do",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Contact local family and friends.",
+              "Offer to tell others and be an ally.",
+              "There are resources online to help, seek it and see if it is trusted or not."
+            ]
+          },
+          {
+            "scenario": "Friends says they will protect you but don't and they are taking advantage",
+            "recommendations": [
+              "Avoid situations with those people",
+              "Let law enforcement know.",
+              "Tell trusted freinds.",
+              "Don't stay in contact."
+            ]
+          },
+          {
+            "scenario": "Family member is taking advantage of another family member",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Get them away from that family member.",
+              "Offer trusted guidance",
+              "Avoid physical altercations",
+              "Alert family freinds."
+            ]
+          },
+          {
+            "scenario": "Someone online is offering sexual situations and will tell others or has images",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Delete them immediatly",
+              "Don't talk to them or anyone that they might be associated with.",
+              "Alert family freinds",
+              "Seek counseling."
+            ]
+          },
+          {
+            "scenario": "Worried about a partner acting strange during sexual relations",
+            "recommendations": [
+              "Avoid putting yourself in those situations.",
+              "Talk with them to make sure they are not on drugs",
+              "If you feel harmed contact authorities",
+              "You have the choice whether or not to be in those situations."
+            ]
+          },
+          {
+            "scenario": "If you are being taken advantage and unsure",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Find a trusted friend or adult.",
+              "Don't be afraid to ask for help",
+              "Let them know you want to be left alone."
+            ]
+          },
+          {
+            "scenario": "Not understanding what to do when sexual activity is wrong",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Find a trusted friend or adult.",
+              "Don't be afraid to ask for help",
+              "Let them know you want to be left alone."
+            ]
+          },
+          {
+            "scenario": "There's no legal recourse to take",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Find a trusted friend or adult.",
+              "Don't be afraid to ask for help",
+              "Seek guidence online if resources can't be found in person."
+            ]
+          },
+          {
+            "scenario": "Someone is recording without asking permission during sexual activity",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Find a trusted friend or adult.",
+              "This is a violation so don't be afraid to say anything about what happened",
+              "If a relationship or connection is lost it is for good reason."
+            ]
+          },
+          {
+            "scenario": "Someone is acting strange but don't know what is wrong",
+            "recommendations": [
+              "Avoid sexual situations with that person.",
+              "Offer that person to seek out counseling.",
+              "There's a good reason why there might be someone acting wrong",
+              "Protect yourself and make sure it's not you."
+            ]
+          },
+          {
+            "scenario": "Sexual assault has happended",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Find a trusted friend or adult.",
+              "This is not your fault.",
+              "Make sure to provide as much detail about the event."
+            ]
+          },
+          {
+            "scenario": "If a friend or family member feels lost after an event contact law enforcement immediately.",
+            "recommendations": [
+              "If there is no contact reach out with authorities.",
+              "This is not your fault.",
+              "Make sure to provide as much detail about the event.",
+              "Protect yourself as needed."
+            ]
+          },
+          {
+            "scenario": "Avoid situations where people are not protected.",
+            "recommendations": [
+              "Leave or avoid those interactions.",
+              "Take self defense classes.",
+              "Don't be afraid to call for help",
+              "Know that you are the most important person in the room."
+            ]
+          },
+          {
+            "scenario": "If it has happened what's next",
+            "recommendations": [
+              "Reach out to law enforcement.",
+              "Tell trusted adult.",
+              "Tell a trusted friend.",
+              "Seek guidence online if resources can't be found in person."
+            ]
+          },
+          {
+            "scenario": "Reach out with mental health.",
+            "recommendations": [
+              "Know what can be done.",
+              "This isn't your fault",
+              "There are actions to improve this for everyone",
+              "Stay strong."
+            ]
+          },
+          {
+            "scenario": "There is an incident report it.",
+            "recommendations": [
+              "Contact law enforcement.",
+              "Find a trusted friend or adult.",
+              "There is guidence to help improve this event.",
+              "You are not alone."
+            ]
+          },
+          {
+            "scenario": "What to do when you don't know someone or trust.",
+            "recommendations": [
+              "Avoid sexual activities.",
+              "Avoid being in isolated locations",
+              "Inform authorities",
+              "Make sure someone or an incident happens reach out."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "sexual assault",
+        "scenarios": [
+          {
+            "scenario": "Feeling uncomfortable with physical contact from someone",
+            "recommendations": [
+              "Tell the person to stop.",
+              "Create physical distance.",
+              "Remove yourself from the situation.",
+              "Seek support from a trusted friend, family member, or counselor."
+            ]
+          },
+          {
+            "scenario": "Witnessing someone else being sexually harassed or assaulted",
+            "recommendations": [
+              "Intervene if it is safe to do so.",
+              "Offer support to the victim.",
+              "Report the behavior to authorities or HR.",
+              "Be an active bystander and speak out against inappropriate behavior."
+            ]
+          },
+          {
+            "scenario": "Experiencing a power imbalance in a relationship",
+            "recommendations": [
+              "Communicate your boundaries clearly.",
+              "Seek counseling or support to address the power imbalance.",
+              "If the behavior is abusive, seek legal counsel and consider ending the relationship.",
+              "If the behavior worsens contact the authorities immediately."
+            ]
+          },
+          {
+            "scenario": "There is nothing to contact friends and family",
+            "recommendations": [
+              "Reach out to law enforcement",
+              "Reach out to trusted authorities",
+              "If you are a minor talk with your parents",
+              "Know you are not alone."
+            ]
+          },
+          {
+            "scenario": "You don't think it's bad enough or the person is your friend or family.",
+            "recommendations": [
+              "This behavior is still not acceptable",
+              "Talk with law enforcement.",
+              "Reach out to trusted authorities",
+              "Stay strong and know you are not alone."
+            ]
+          },
+          {
+            "scenario": "There are no options",
+            "recommendations": [
+              "There are options even though it doesn't seem that way.",
+              "Reach out to law enforcement",
+              "Be safe",
+              "Take action",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "People don't believe what's happened",
+            "recommendations": [
+              "Avoid interactions and reach out to authorities or legal officials.",
+              "If the harm continues, contact law enforcement",
+              "Stay safe",
+              "Take action",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "Worried about sexual harassment online",
+            "recommendations": [
+              "Tell trusted authorities and friends",
+              "Contact law enforcement.",
+              "Be safe and don't connect",
+              "Inform people who need to be involved.",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "Worried about someone you know is being hurt",
+            "recommendations": [
+              "You are not in the wrong.",
+              "Talk and ask if you can provide assistance",
+              "If someone is in danger contact law enforcement",
+              "Stay strong and provide guidance and see if the family is trustworthy.",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "Someone in danger isn't acting right",
+            "recommendations": [
+              "You are not wrong or right it's just that you are worried.",
+              "Contact law enforcement but make sure you have all the details,.",
+              "Stay strong and provide guidence and see if the family is trustworthy",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "There are bad interactions online and it is a minor",
+            "recommendations": [
+              "Tell their parents and guardians if the child feels safe.",
+              "If not, contact law enforcement.",
+              "If the threat is eminent reach out to authorities",
+              "Don't connect and tell others",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "Family is too tough",
+            "recommendations": [
+              "Don't be afraid to reach out to authorities without approval",
+              "Stay safe and don't connect or tell",
+              "Offer safety and guidance that what has happened isn't right.",
+              "You are not alone"
+            ]
+          },
+          {
+            "scenario": "Harassed in public or during an event",
+            "recommendations": [
+              "Reach out to law enforcement",
+              "Tell the managers",
+              "Don't let the people be there.",
+              "There are safe people with your best interest."
+            ]
+          },
+          {
+            "scenario": "See or watch inappropriate act occur or happen",
+            "recommendations": [
+              "Contact authorities",
+              "Tell a trusted authorities",
+              "Is there an active shooter avoid interaction",
+              "Let local law enforcement know",
+              "You are not in the wrong or you are going crazy."
+            ]
+          },
+          {
+            "scenario": "Worried about something online",
+            "recommendations": [
+              "Inform law enforcment.",
+              "Reach out to authorities with cyber activity",
+              "Talk with the website about innapropriate activity",
+              "You are not in the wrong or you are going crazy",
+              "What do if you have no freinds.",
+              "See online for local community members."
+            ]
+          },
+          {
+            "scenario": "What if a coworker is taking advantage?",
+            "recommendations": [
+              "Reach out to HR",
+              "Contact Law Enforcement",
+              "If the job is taking advantage look for other jobs.",
+              "Check what the company's code of conduct has.",
+              "There are other jobs you don't need that disrespecting your body."
+            ]
+          },
+          {
+            "scenario": "Boss won't leave you alone?",
+            "recommendations": [
+              "Check what the company's code of conduct has.",
+              "If it violates contact law enforcement.",
+              "Bosses and other employees can take advantage of their power, don't feel afraid to defend yourself",
+              "Find other jobs and seek what options there are"
+            ]
+          },
+          {
+            "scenario": "Someone is making bad comments",
+            "recommendations": [
+              "Ignore it.",
+              "Tell authorities what is going on.",
+              "Let friends and family know what happened and tell them to support.",
+              "There are a lot of rude and scary people online don't engage"
+            ]
+          },
+          {
+            "scenario": "Not feeling safe around my friends and family",
+            "recommendations": [
+              "Don't allow those interactions",
+              "If they hurt you report",
+              "You are not going crazy and they are hurting you so stand strong",
+              "Check on them for assistance."
+            ]
+          },
+          {
+            "scenario": "Feel like someone took advantage",
+            "recommendations": [
+              "Seek guidence and help",
+              "What's happening isn't normal",
+              "Avoid those activities and take some time for reflection",
+              "Call a lawyer or trusted official. "
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "homicide",
+        "scenarios": [
+          {
+            "scenario": "Witnessing a violent altercation or threat",
+            "recommendations": [
+              "Prioritize your safety. Leave the area immediately.",
+              "Call emergency services (police) to report the incident.",
+              "Provide a detailed account of what you witnessed to law enforcement."
+            ]
+          },
+          {
+            "scenario": "Receiving threats or intimidation",
+            "recommendations": [
+              "Take the threats seriously. Report them to law enforcement.",
+              "Document all instances of threats, including dates, times, and details.",
+              "Seek a restraining order if necessary."
+            ]
+          },
+          {
+            "scenario": "Having knowledge of someone planning to harm others",
+            "recommendations": [
+              "Contact law enforcement immediately.",
+              "Provide any information you have about the potential threat.",
+              "Cooperate fully with the authorities."
+            ]
+          },
+          {
+            "scenario": "Finding or stumbling upon illegal substances or activity",
+            "recommendations": [
+              "Do not engage or let anyone else. ",
+              "Contact authorities if they can provide assistance.",
+              "There will be threats reach out to friends.",
+              "Don't put yourself in danger."
+            ]
+          },
+          {
+            "scenario": "If you have been threatened.",
+            "recommendations": [
+              "Reach out to law enforcement.",
+              "You have all the power to not be in that situation.",
+              "If a gun is in your position.",
+              "Protect yourself and call"
+            ]
+          },
+          {
+            "scenario": "Worried about family being around a person.",
+            "recommendations": [
+              "Discuss with your family to avoid.",
+              "Can't put people in a bubble.",
+              "Be understanding and don't take it personally",
+              "Provide security"
+            ]
+          },
+          {
+            "scenario": "If someone comes to the door threatening.",
+            "recommendations": [
+              "Call police.",
+              "See what resources are avilable",
+              "This isn't normal and be protective",
+              "This isn't worth it."
+            ]
+          },
+          {
+            "scenario": "People are coming to your door what can happen",
+            "recommendations": [
+              "Reach out to law enforcement to ask about your home",
+              "There are steps for security.",
+              "Be safe",
+              "Protect yourself and family"
+            ]
+          },
+          {
+            "scenario": "What to do when someone is doing strange activity around your car",
+            "recommendations": [
+              "This isn't right contact law enforcement",
+              "Do not engage",
+              "Be safe and don't use any means"
+            ]
+          },
+          {
+            "scenario": "What to do when someone is being suspicious",
+            "recommendations": [
+              "Leave avoid don't interact",
+              "There are reasons why someone would want to harm you.",
+              "Call or use protection",
+              "Let them not act on their violence"
+            ]
+          },
+          {
+            "scenario": "How to handle dangerous situations that are in your homes?",
+            "recommendations": [
+              "Be calm and contact",
+              "Follow what they say to get out.",
+              "Try not to do anything they don't want you to",
+              "Call for help once outside"
+            ]
+          },
+          {
+            "scenario": "There are many reasons why someone would want to harm you and you should act.",
+            "recommendations": [
+              "Ask for guidence.",
+              "Get help.",
+              "Don't let them win",
+              "Be safe or secure yourself"
+            ]
+          },
+          {
+            "scenario": "How to improve an action",
+            "recommendations": [
+              "Inform law enforcment immediately.",
+              "Contact 911 or the authorities.",
+              "Know all your surroundings.",
+              "When there is violence avoid."
+            ]
+          },
+          {
+            "scenario": "In public and things get rowdy what to do to avoid",
+            "recommendations": [
+              "If no danger stay calm and avoid",
+              "Look out for yourself. Don't let them win",
+              "Avoid those interractions and people",
+              "Be safe for your friend"
+            ]
+          },
+          {
+            "scenario": "Being hurt by friends and fam",
+            "recommendations": [
+              "Seek guidence. Don't let them in",
+              "If you tell people and they don't believe in you leave there is more important.",
+              "They have a lot of wrong things.",
+              "Tell the truth"
+            ]
+          },
+          {
+            "scenario": "If someone threatens what is in your name",
+            "recommendations": [
+              "There are action steps that you can avoid them and not let them happen",
+              "Contact law enforcement and ask for advice",
+              "Contact a legal counselor and seek assistance",
+              "Contact 911 if action is in place"
+            ]
+          },
+          {
+            "scenario": "Avoid people that are always in the wrong situations",
+            "recommendations": [
+              "Try not to be around.",
+              "Avoid contact",
+              "These events may lead to bad",
+              "Be your own human"
+            ]
+          },
+          {
+            "scenario": "Know what someone is capable.",
+            "recommendations": [
+              "Inform local law enforcement",
+              "What is going to happen with violence may occur.",
+              "Avoid those individuals",
+              "Avoid being around"
+            ]
+          },
+          {
+            "scenario": "Bad situations happen quickly.",
+            "recommendations": [
+              "Ask yourself these situations",
+              "Avoid places.",
+              "There are things that may happen",
+              "Take action."
+            ]
+          },
+          {
+            "scenario": "If there is contact avoid being around.",
+            "recommendations": [
+              "If you can't what can happen.",
+              "Tell the truth to people that protect and keep safe.",
+              "Reach out for guidence.",
+              "This isn't wrong and make sure you are okay."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "robbery",
+        "scenarios": [
+          {
+            "scenario": "Walking alone at night in an unsafe area",
+            "recommendations": [
+              "Avoid walking alone in poorly lit or high-crime areas.",
+              "Stay aware of your surroundings. Avoid distractions like using your phone.",
+              "Carry a personal alarm or whistle to attract attention if needed.",
+              "If confronted, comply with the robber's demands and do not resist."
+            ]
+          },
+          {
+            "scenario": "Approaching an ATM in a secluded location",
+            "recommendations": [
+              "Use ATMs in well-lit and public areas.",
+              "Be aware of your surroundings before approaching the ATM.",
+              "Shield your PIN when entering it.",
+              "If you feel unsafe, leave immediately and use a different ATM."
+            ]
+          },
+          {
+            "scenario": "Opening your door to a stranger",
+            "recommendations": [
+              "Verify the person's identity through the peephole or window.",
+              "Ask for identification if they claim to be a service representative.",
+              "If you are not expecting anyone, do not open the door.",
+              "Call law enforcement if you feel threatened or suspicious."
+            ]
+          },
+          {
+            "scenario": "You are walking a friend home what do you do",
+            "recommendations": [
+              "Don't use back or unsafe routes.",
+              "Have protection by either calling it.",
+              "If a robbery is happening run.",
+              "Try and call for help."
+            ]
+          },
+          {
+            "scenario": "It is more important.",
+            "recommendations": [
+              "There are many things. You have more to live.",
+              "There may be issues reach out but you are valuable.",
+              "They can provide help but not in that situation",
+              "If you avoid they want nothing you are being you"
+            ]
+          },
+          {
+            "scenario": "You do a dangerous act what to do",
+            "recommendations": [
+              "If harm or threat is eminent reach out for help",
+              "There are a lot of unsafe things to do avoid don't take the risk.",
+              "If there are options seek.",
+              "Contact guidance to help if needed but if there is a robbery contact local authorities"
+            ]
+          },
+          {
+            "scenario": "People are doing dangerous things.",
+            "recommendations": [
+              "Don't put yourself at risk avoid",
+              "If someone gets to you.",
+              "You are not the enemy",
+              "Use what it says to go and to make sure everyone is good."
+            ]
+          },
+          {
+            "scenario": "Family is in this action protect them",
+            "recommendations": [
+              "Take your love for not being safe.",
+              "Protect yourself but let them not know.  ",
+              "If this causes harm to the family contact police to stop.",
+              "There is another situation that is far and that means that they didn't think about you. Make it clear for everyone with love"
+            ]
+          },
+          {
+            "scenario": "Know what their intentions.",
+            "recommendations": [
+              "Try and avoid contact.",
+              "You have something they want and if it doesn't happen move along.",
+              "Be your truth",
+              "There are other actions but not what is intended"
+            ]
+          },
+          {
+            "scenario": "Not sure what to do and you are stressed.",
+            "recommendations": [
+              "Reach out to local authorities",
+              "Take a time to be away.",
+              "Protect yourself and keep with people. ",
+              "They will be there to support and keep safe to come."
+            ]
+          },
+          {
+            "scenario": "People are talking about.",
+            "recommendations": [
+              "Avoid and keep to yourself. Don't let them fool you",
+              "This what has happened to not engage.",
+              "The outcome you may have is good to stop. ",
+              "People can't be trusted."
+            ]
+          },
+          {
+            "scenario": "There are dangerous things you need to avoid doing.",
+            "recommendations": [
+              "If they did ask for help.",
+              "These actions come what happen but you are more worth and have more value",
+              "The world may need to see what they are doing and keep a secret but not for long.",
+              "Reach out with your truth."
+            ]
+          },
+          {
+            "scenario": "People are doing bad things.",
+            "recommendations": [
+              "Be open but they can't hurt or do.",
+              "You are safe",
+              "There can be many reasons to not let those dangerous activities harm to you.",
+              "Take care of the inner spirit and don't let harm occur"
+            ]
+          },
+          {
+            "scenario": "Don't take that path.",
+            "recommendations": [
+              "These actions are bad and don't need it what happen and there is more too come.",
+              "You protect you and you be you",
+              "You are that is important in the room",
+              "There maybe things that may have value but there is more love and you don't want to lose it."
+            ]
+          },
+          {
+            "scenario": "Know to keep with them to protect and be okay. Avoid actions.",
+            "recommendations": [
+              "Protect with local authorities.",
+              "What is going to action is that it is good to protect you.",
+              "Take steps to better actions",
+              "Learn to not repeat them."
+            ]
+          },
+          {
+            "scenario": "Learn that there is more or it will hurt more. What to do if it actions with fam that are dangerous.",
+            "recommendations": [
+              "Tell authorities to keep it safe",
+              "Know actions and do not be afraid to have others say no.",
+              "If a family has harm with those actions be in actions for what may happen.",
+              "What they love and actions doesn't make what you be and they still love to give it"
+            ]
+          },
+          {
+            "scenario": "You protect or you are not.",
+            "recommendations": [
+              "Do not let yourself hurt.",
+              "These actions and people should make you feel uncomfortable and don't. Contact to better actions",
+              "You be more then the hurt and take a lesson and never to protect if not",
+              "They care protect it"
+            ]
+          },
+          {
+            "scenario": "You have friends with actions. What is or happens.",
+            "recommendations": [
+              "Avoid actions but if not take steps what is safe to you.",
+              "Contact local or better for more details",
+              "Protect you don't be scared",
+              "Reach out more actions."
+            ]
+          },
+          {
+            "scenario": "Don't avoid more and reach out with what is good to make sense.",
+            "recommendations": [
+              "Protect you but don't lie be good.",
+              "Actions with the best of you may happen and bad, reach out.",
+              "You are strong no matter who you are.",
+              "Reach what is good and for to not fall"
+            ]
+          },
+          {
+            "scenario": "If you have been wronged and what actions did happen.",
+            "recommendations": [
+              "Action now and actions now.",
+              "Do the safe action",
+              "There is steps.",
+              "Let that it happen."
+            ]
+          },
+          {
+            "scenario": "What did you ask for with better?",
+            "recommendations": [
+              "Don't force yourself into actions",
+              "What more it would be nice if more love actions.",
+              "What happened with or for.",
+              "Love is good for your actions, learn that more."
+            ]
+          }
+        ]
+      },
+      {
+        "crime": "Theft",
+        "scenarios": [
+          {
+            "scenario": "Not sure what to do what to call.",
+            "recommendations": [
+              "You may have been wrong if someone steals call police.",
+              "If you feel.",
+              "The harm there may be done.",
+              "Be safe and they can help."
+            ]
+          },
+          {
+            "scenario": "What stolen or bad. Is",
+            "recommendations": [
+              "Be safe to feel right",
+              "Reach out and see what happens.",
+              "Don't feel scared that happen.",
+              "You were a good job."
+            ]
+          },
+          {
+            "scenario": "The damage may have been done what to avoid.",
+            "recommendations": [
+              "Reach more not steal",
+              "Don't know how that hurts",
+              "Avoid doing and there is more.",
+              "The love isn't taken for granted. What more do you do? Don't be it."
+            ]
+          },
+          {
+            "scenario": "If done ask yourself",
+            "recommendations": [
+              "If wrong?",
+              "How do you react?",
+              "What will you do?",
+              "If hurt protect and heal."
+            ]
+          },
+          {
+            "scenario": "Friends are doing wrong and what actions to do?",
+            "recommendations": [
+              "Stop it not hurt.",
+              "If they continue stay away.",
+              "Contact with and what is may come.",
+              "You protect with there is"
+            ]
+          },
+          {
+            "scenario": "Stolen by you?.",
+            "recommendations": [
+              "Turn in and say sorry.",
+              "May actions be okay.",
+              "You learn and do not be wrong.",
+              "Protect your actions if it may hurt and ask what is"
+            ]
+          },
+          {
+            "scenario": "If they keep what to do with.",
+            "recommendations": [
+              "Reach authorities or local laws.",
+              "That what happened that you.",
+              "Protect it with what.",
+              "It what can be there."
+            ]
+          },
+          {
+            "scenario": "When that what happened you not stolen?",
+            "recommendations": [
+              "Learn protect action.",
+              "No actions bad but may have happened and wrong actions",
+              "Is more great",
+              "You are actions."
+            ]
+          },
+          {
+            "scenario": "If someone says it not you.",
+            "recommendations": [
+              "Action with there.",
+              "Protect what is and better more.",
+              "You want.",
+              "What is love action?"
+            ]
+          },
+          {
+            "scenario": "Tell to not do.",
+            "recommendations": [
+              "Is there a harm actions. Stop that action",
+              "Is there a what to say actions may happen.",
+              "Contact what is more and better.",
+              "Protect actions action."
+            ]
+          },
+          {
+            "scenario": "It not okay.",
+            "recommendations": [
+              "You will never have the love and or happy .",
+              "You will keep hurting.",
+              "People are not yours.",
+              "Let the actions bad. Avoid. Action."
+            ]
+          },
+          {
+            "scenario": "What will that actions may happen?",
+            "recommendations": [
+              "Local authorities or hurt?",
+              "Not you.",
+              "Do not.",
+              "Say that with protect."
+            ]
+          },
+          {
+            "scenario": "Actions and not may.",
+            "recommendations": [
+              "Be safe.",
+              "What you are the most.",
+              "It just and may hurt.",
+              "Local good more harm."
+            ]
+          },
+          {
+            "scenario": "Not actions tell or protect.",
+            "recommendations": [
+              "What is it hurting?",
+              "For to that protect.",
+              "Not need you more.",
+              "Tell the actions."
+            ]
+          },
+          {
+            "scenario": "If wrong you may",
+            "recommendations": [
+              "Actions there and know protect.",
+              "Tell action",
+              "How that actions can make you.",
+              "Love who that is protect and bad there."
+            ]
+          },
+          {
+            "scenario": "What you protect may can hurt.",
+            "recommendations": [
+              "Not actions may steal. ",
+              "Bad actions why actions.",
+              "Is it what I done."
+            ]
+          }
+        ]
+      }
+    ]
+  }
