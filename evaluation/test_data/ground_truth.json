@@ -1,0 +1,73 @@
+[
+    {
+      "query_id": 1,
+      "crime": "stalking",
+      "sentiment": -0.85,
+      "ideal_recommendation_ids": [3, 7],
+      "severity": "high"
+    },
+    {
+      "query_id": 2,
+      "crime": "theft",
+      "sentiment": -0.70,
+      "ideal_recommendation_ids": [12, 15],
+      "severity": "medium"
+    },
+    {
+      "query_id": 3,
+      "crime": "fraud",
+      "sentiment": -0.75,
+      "ideal_recommendation_ids": [22, 23],
+      "severity": "medium"
+    },
+    {
+      "query_id": 4,
+      "crime": "harassment",
+      "sentiment": -0.80,
+      "ideal_recommendation_ids": [5, 8],
+      "severity": "high"
+    },
+    {
+      "query_id": 5,
+      "crime": "identity theft",
+      "sentiment": -0.65,
+      "ideal_recommendation_ids": [25, 26],
+      "severity": "medium"
+    },
+    {
+      "query_id": 6,
+      "crime": "burglary",
+      "sentiment": -0.90,
+      "ideal_recommendation_ids": [14, 16],
+      "severity": "high"
+    },
+    {
+      "query_id": 7,
+      "crime": "theft",
+      "sentiment": -0.70,
+      "ideal_recommendation_ids": [10, 11],
+      "severity": "medium"
+    },
+    {
+      "query_id": 8,
+      "crime": "assault",
+      "sentiment": -0.95,
+      "ideal_recommendation_ids": [1, 2],
+      "severity": "high"
+    },
+    {
+      "query_id": 9,
+      "crime": "stalking",
+      "sentiment": -0.85,
+      "ideal_recommendation_ids": [3, 6],
+      "severity": "high"
+    },
+    {
+      "query_id": 10,
+      "crime": "unauthorized access",
+      "sentiment": -0.60,
+      "ideal_recommendation_ids": [27, 28],
+      "severity": "low"
+    }
+  ]
+  

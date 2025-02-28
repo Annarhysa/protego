@@ -1,0 +1,53 @@
+[
+    {
+      "query_id": 1,
+      "query_text": "Someone follows me home from work every day and I'm scared",
+      "category": "personal safety"
+    },
+    {
+      "query_id": 2,
+      "query_text": "I think my neighbor is breaking into cars at night",
+      "category": "property crime"
+    },
+    {
+      "query_id": 3,
+      "query_text": "My credit card was used without my permission to buy things online",
+      "category": "fraud"
+    },
+    {
+      "query_id": 4,
+      "query_text": "I'm getting threatening messages from an unknown person",
+      "category": "harassment"
+    },
+    {
+      "query_id": 5,
+      "query_text": "I'm worried about my identity being stolen after a data breach",
+      "category": "cybercrime"
+    },
+    {
+      "query_id": 6,
+      "query_text": "Someone broke into my house while I was away",
+      "category": "property crime"
+    },
+    {
+      "query_id": 7,
+      "query_text": "My phone was snatched from my hand on the bus",
+      "category": "theft"
+    },
+    {
+      "query_id": 8,
+      "query_text": "I was assaulted while walking home last night",
+      "category": "violent crime"
+    },
+    {
+      "query_id": 9,
+      "query_text": "My ex keeps showing up at my workplace uninvited",
+      "category": "stalking"
+    },
+    {
+      "query_id": 10,
+      "query_text": "I think someone is using my WiFi without permission",
+      "category": "cybercrime"
+    }
+  ]
+  
