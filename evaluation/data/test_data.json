@@ -1,0 +1,36 @@
+{
+  "crime_detection": [
+    {
+      "query": "Someone broke into my car last night",
+      "expected_crime": "burglary"
+    },
+    {
+      "query": "I received threatening messages",
+      "expected_crime": "harassment"
+    },
+    {
+      "query": "My wallet was stolen at the mall",
+      "expected_crime": "theft"
+    }
+  ],
+  "sentiment_matching": [
+    {
+      "query": "I'm terrified after my house was broken into",
+      "recommendation": "Install security cameras",
+      "expected_sentiment_similarity": 0.7
+    },
+    {
+      "query": "My neighbor keeps making noise at night",
+      "recommendation": "Try talking to them calmly",
+      "expected_sentiment_similarity": 0.8
+    }
+  ],
+  "paraphrase_quality": [
+    {
+      "original_text": "Make sure to lock all doors and windows before leaving."
+    },
+    {
+      "original_text": "Report suspicious activities to local authorities immediately."
+    }
+  ]
+}

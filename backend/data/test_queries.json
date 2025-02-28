@@ -1,0 +1,29 @@
+{
+    "test_cases": [
+      {
+        "query": "Someone is constantly messaging me. What should I do? I am really scared.",
+        "expected_crime": "stalking",
+        "expected_recommendation": "Report the fake profile to the social media platform."
+      },
+      {
+        "query": "Receiving unsolicited images or videos of children",
+        "expected_crime": "child pornography",
+        "expected_recommendation": "Here is my suggestion: Check your child's friends' social media accounts."
+      },
+      {
+        "query": "I received a suspicious phone call asking for my bank details.",
+        "expected_crime": "fraud",
+        "expected_recommendation": "Do not share any personal information and report the scam call to your bank and local fraud prevention agencies."
+      },
+      {
+        "query": "A stranger followed me home, and I felt unsafe.",
+        "expected_crime": "stalking",
+        "expected_recommendation": "Don't engage with the user."
+      },
+      {
+        "query": "My friend was harassed online. How can they protect themselves?",
+        "expected_crime": "stalking",
+        "expected_recommendation": "Block the sender immediately."
+      }
+    ]
+  }  
