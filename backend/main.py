@@ -4,6 +4,7 @@ import pandas as pd
 from chatbot import CrimeBot
 from crime_analyzer import CrimeAnalyzer
 from crime_reporter import CrimeReporter
+from recommendation import detect_crime, get_recommendations, paraphrase_text, get_sentiment
 import logging
 
 app = Flask(__name__)
@@ -213,6 +214,42 @@ def get_prevalent_crimes():
     except Exception as e:
         logger.error(f"Error in /prevalent-crimes endpoint: {str(e)}")
         return jsonify({"error": str(e)}), 500
+        
+@app.route("/chat", methods=["POST"])
+def chat():
+    user_query = request.json.get("query", "").strip()
+   
+    if not user_query:
+        return "Please provide a valid query."
+   
+    # Detect the crime
+    detected_crime = detect_crime(user_query)
+   
+    # Get recommendations
+    scenarios = get_recommendations(detected_crime)
+    if not scenarios:
+        return f"I found that your concern is related to {detected_crime}, but I don't have any recommendations at the moment."
+   
+    # Get user sentiment
+    user_sentiment = get_sentiment(user_query)
+   
+    # Find the recommendation with the closest sentiment match
+    best_match = None
+    best_sentiment_diff = float("inf")
+   
+    for scenario in scenarios:
+        for rec in scenario["recommendations"]:
+            rec_sentiment = get_sentiment(rec)
+            sentiment_diff = abs(user_sentiment - rec_sentiment)
+            if sentiment_diff < best_sentiment_diff:
+                best_sentiment_diff = sentiment_diff
+                best_match = rec
+   
+    if best_match:
+        refined_response = paraphrase_text(best_match)
+        return f"Based on your query, I identified the crime as {detected_crime}. Here is my suggestion: {refined_response}"
+    else:
+        return f"I found that your concern is related to {detected_crime}, but I don't have a matching recommendation."
 
 if __name__ == "__main__":
     app.run(debug=True)
