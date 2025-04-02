@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold text-gray-900 mb-4">
-          Welcome to the Crime Portal
+          Welcome to Protego, your Crime Portal
         </h1>
         <p className="text-xl text-gray-600">
           Your one-stop solution for crime analysis, reporting, and querying.
@@ -36,7 +36,7 @@ export default function Home() {
               Report a Crime
             </h2>
             <p className="text-gray-600">
-              Report a crime quickly and securely.
+              Report a crime quickly, securely along with quick tackle tips.
             </p>
           </div>
         </Link>

@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }) {
           <div className="flex justify-between items-center h-16">
             {/* Crime Portal Link */}
             <Link href="/" className="text-xl font-bold text-gray-900 hover:text-gray-700">
-              Crime Portal
+              Protego
             </Link>
 
             {/* Navigation Links */}
@@ -37,16 +37,16 @@ export default function DashboardLayout({ children }) {
               {/* Desktop Navigation Links */}
               <div className="hidden md:flex space-x-4">
                 <Link href="/analyze" className="text-gray-700 hover:text-gray-900 font-medium">
-                  Analyze Crime Data
+                  Analyze
                 </Link>
                 <Link href="/report" className="text-gray-700 hover:text-gray-900 font-medium">
-                  Report a Crime
+                  Report
                 </Link>
                 <Link href="/ask" className="text-gray-700 hover:text-gray-900 font-medium">
-                  Query Crime Data
+                  Query
                 </Link>
                 <Link href="/chat" className="text-gray-700 hover:text-gray-900 font-medium">
-                  Victim Support
+                  Support
                 </Link>
               </div>
             </div>
@@ -56,13 +56,16 @@ export default function DashboardLayout({ children }) {
           <div className="md:hidden">
             <div className="flex flex-col space-y-2 mt-4">
               <Link href="/analyze" className="text-gray-700 hover:text-gray-900 font-medium">
-                Analyze Crime Data
+                Analyze
               </Link>
               <Link href="/report" className="text-gray-700 hover:text-gray-900 font-medium">
-                Report a Crime
+                Report
               </Link>
               <Link href="/ask" className="text-gray-700 hover:text-gray-900 font-medium">
-                Query Crime Data
+                Query
+              </Link>
+              <Link href="/chat" className="text-gray-700 hover:text-gray-900 font-medium">
+                Support
               </Link>
             </div>
           </div>
