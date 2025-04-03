@@ -9,7 +9,7 @@ export default function Home() {
           Welcome to Protego, your Crime Portal
         </h1>
         <p className="text-xl text-gray-600">
-          Your one-stop solution for crime analysis, reporting, and querying.
+          Your one-stop solution for crime analysis, reporting, and querying
         </p>
       </div>
 
@@ -23,7 +23,7 @@ export default function Home() {
               Analyze Crime Data
             </h2>
             <p className="text-gray-600">
-              Explore and analyze crime statistics with advanced tools.
+              Explore and analyze crime statistics with advanced tools
             </p>
           </div>
         </Link>
@@ -36,7 +36,7 @@ export default function Home() {
               Report a Crime
             </h2>
             <p className="text-gray-600">
-              Report a crime quickly, securely along with quick tackle tips.
+              Report a crime quickly, securely along with quick tackle tips
             </p>
           </div>
         </Link>
