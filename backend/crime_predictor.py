@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
-import numpy as np
 
 class CrimePredictor:
     def __init__(self):

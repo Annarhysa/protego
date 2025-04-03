@@ -4,7 +4,11 @@ import pandas as pd
 from chatbot import CrimeBot
 from crime_analyzer import CrimeAnalyzer
 from crime_reporter import CrimeReporter
-from recommendation import detect_crime, get_recommendations, filter_similar_suggestions, get_sentiment, elaborate_recommendation
+from recommendation import detect_crime
+from recommendation import get_recommendations
+from recommendation import elaborate_recommendations
+from recommendation import score_and_sort_recommendations
+from recommendation import batch_improve_recommendations
 import logging
 
 app = Flask(__name__)
@@ -230,29 +234,21 @@ def chat():
     if not all_recommendations:
         return f"Detected potential crimes: {', '.join(detected_crimes)}.\n No recommendations found."
 
-    # Get user sentiment
-    user_sentiment = get_sentiment(user_query)
+    sentiment_score = score_and_sort_recommendations(user_query, all_recommendations)
+
+    elaborated_recommendations = elaborate_recommendations(sentiment_score)
+
+    filtered_recommendations = batch_improve_recommendations(elaborated_recommendations)
+
+    #elaborated_recommendations = elaborate_recommendations(filtered_recommendations_1)
+
+    #filtered_recommendations_2 = remove_repetitive_sentences(elaborated_recommendations)
     
-    # Score and sort recommendations
-    scored_recs = []
-    for rec in all_recommendations:
-        rec_sentiment = get_sentiment(rec)
-        sentiment_diff = abs(user_sentiment - rec_sentiment)
-        scored_recs.append((rec, sentiment_diff))
-    
-    # Get top 3 recommendations by sentiment match
-    top_recommendations = sorted(scored_recs, key=lambda x: x[1])[:3]
+    # Paraphrase recommendations for diversity
+    #paraphrased_recommendations = [paraphrase_text(rec) for rec in filtered_recommendations]
 
     
-    # Generate detailed versions
-    detailed_recommendations = [
-        elaborate_recommendation(rec[0]) for rec in top_recommendations
-    ]
-
-    unique_recommendations = filter_similar_suggestions(detailed_recommendations)
-
-    
-    return f"Based on your query, I identified the crime as {', '.join(detected_crimes)}.\n Here is my suggestion: {' '.join(unique_recommendations)}"
+    return f"Based on your query, I identified the crime as {', '.join(detected_crimes)}.\n Here is my suggestion: {filtered_recommendations}" 
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -9,9 +9,6 @@ sbert_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 # Load T5 for paraphrasing (with explicit English instruction)
 paraphrase_pipeline = pipeline("text2text-generation", model="t5-small")
 
-# Load generative model for elaboration (using FLAN-T5 for better generation)
-generation_pipeline = pipeline("text2text-generation", model="google/flan-t5-large")
-
 # Load DistilBERT for sentiment analysis
 sentiment_pipeline = pipeline("sentiment-analysis")
 
@@ -41,16 +38,6 @@ def detect_crime(query):
     
     return [crime_data[i]["crime"] for i in top_indices]
 
-def get_recommendations(crimes):
-    """Get recommendations across multiple detected crimes"""
-    recommendations = []
-    for crime in crimes:
-        for entry in recommendations_data["crime_prevention_recommendations"]:
-            if entry["crime"] == crime:
-                for scenario in entry["scenarios"]:
-                    recommendations.extend(scenario["recommendations"])
-    return recommendations
-
 
 def elaborate_recommendation(text):
     """Generate detailed recommendations using FLAN-T5"""
@@ -70,25 +57,114 @@ def get_sentiment(text):
     score = result["score"] if label == "POSITIVE" else -result["score"]
     return score
 
+def paraphrase_text(text):
+    if isinstance(text, list):
+        # Handle list elements with proper spacing
+        processed_text = ' '.join([str(item).strip() for item in text])
+        # Clean multiple spaces and preserve punctuation spacing
+        processed_text = ' '.join(processed_text.split())
+        processed_text = processed_text.replace(' .', '.').replace(' ,', ',')
+    else:
+        processed_text = str(text).strip()
+    # Explicitly instruct the model to paraphrase in English
+    paraphrased = paraphrase_pipeline(
+        processed_text, 
+        max_length=200, 
+        truncation=True,
+        do_sample=False  # Deterministic generation
+    )
+    
+    result = paraphrased[0]["generated_text"].strip()
+    
+    # Add a fallback mechanism if the response still isn't in English
+    # This is a simple check - you might want to use a more robust language detection
+    if not all(ord(c) < 128 for c in result.replace(' ', '')):
+        # If non-ASCII characters detected, use a simpler approach
+        return text
+    
+    return result
+
 def calculate_similarity(text1, text2):
     """Calculate cosine similarity between two texts"""
     embeddings = sbert_model.encode([text1, text2], convert_to_tensor=True)
     similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1]).item()
     return similarity
 
-def filter_similar_suggestions(suggestions, threshold=0.7):
-    """Filter out similar suggestions based on a threshold"""
-    filtered_suggestions = []
+def get_recommendations(crimes):
+    """Get recommendations across multiple detected crimes"""
+    recommendations = []
+    for crime in crimes:
+        for entry in recommendations_data["crime_prevention_recommendations"]:
+            if entry["crime"] == crime:
+                for scenario in entry["scenarios"]:
+                    recommendations.extend(scenario["recommendations"])
     
-    for suggestion in suggestions:
-        is_unique = True
-        for existing in filtered_suggestions:
-            similarity = calculate_similarity(suggestion, existing)
-            if similarity > threshold:
-                is_unique = False
-                break
-        
-        if is_unique:
-            filtered_suggestions.append(suggestion)
+
+    return recommendations
+
+def score_and_sort_recommendations(user_query, all_recommendations):
+    """Score and sort recommendations based on sentiment similarity"""
+    user_sentiment = get_sentiment(user_query)
     
-    return filtered_suggestions
+    scored_recs = []
+    for rec in all_recommendations:
+        rec_sentiment = get_sentiment(rec)
+        sentiment_diff = abs(user_sentiment - rec_sentiment)
+        scored_recs.append((rec, sentiment_diff))
+    
+    # Get top 3 recommendations by sentiment match
+    top_recommendations = sorted(scored_recs, key=lambda x: x[1])[:3]
+    
+    return [rec[0] for rec in top_recommendations]
+
+def elaborate_recommendations(recommendations):
+    """Elaborate recommendations using FLAN-T5"""
+
+    text_improver = pipeline(
+        "text2text-generation", 
+        model="google/flan-t5-small",
+        device=0 if torch.cuda.is_available() else -1
+    )
+
+    elaborated_recommendations = []
+    for rec in recommendations:
+        prompt = f"Elaborate this recommendation with detailed steps and examples: {rec}"
+        generated = text_improver(
+            prompt,
+            max_length=300,
+            num_beams=4,
+            repetition_penalty=2.5,
+            temperature=0.7
+        )
+        elaborated_recommendations.append(generated[0]["generated_text"].strip())
+    
+    return elaborated_recommendations
+
+def batch_improve_recommendations(recommendations_list):
+    """Process all recommendations in a single batch for better performance"""
+    
+    text_improver = pipeline(
+        "text2text-generation", 
+        model="google/flan-t5-small",
+        device=0 if torch.cuda.is_available() else -1
+    )
+    
+    # Create prompts for each recommendation
+    prompts = [f"Convert this note into a helpful, complete sentence: '{rec}'" 
+              for rec in recommendations_list]
+    
+    # Process all prompts in one batch
+    results = text_improver(
+        prompts,
+        max_length=400,
+        num_beams=2,
+        temperature=0.7
+    )
+    
+    # Extract generated texts
+    improved_recommendations = [result["generated_text"] for result in results]
+    
+    # Combine into a coherent paragraph
+    final_response = " ".join(improved_recommendations)
+    
+    return final_response
