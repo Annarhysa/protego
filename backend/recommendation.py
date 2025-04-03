@@ -6,9 +6,6 @@ from transformers import pipeline
 # Load Sentence-BERT for crime detection
 sbert_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
-# Load T5 for paraphrasing (with explicit English instruction)
-paraphrase_pipeline = pipeline("text2text-generation", model="t5-small")
-
 # Load DistilBERT for sentiment analysis
 sentiment_pipeline = pipeline("sentiment-analysis")
 
@@ -57,32 +54,6 @@ def get_sentiment(text):
     score = result["score"] if label == "POSITIVE" else -result["score"]
     return score
 
-def paraphrase_text(text):
-    if isinstance(text, list):
-        # Handle list elements with proper spacing
-        processed_text = ' '.join([str(item).strip() for item in text])
-        # Clean multiple spaces and preserve punctuation spacing
-        processed_text = ' '.join(processed_text.split())
-        processed_text = processed_text.replace(' .', '.').replace(' ,', ',')
-    else:
-        processed_text = str(text).strip()
-    # Explicitly instruct the model to paraphrase in English
-    paraphrased = paraphrase_pipeline(
-        processed_text, 
-        max_length=200, 
-        truncation=True,
-        do_sample=False  # Deterministic generation
-    )
-    
-    result = paraphrased[0]["generated_text"].strip()
-    
-    # Add a fallback mechanism if the response still isn't in English
-    # This is a simple check - you might want to use a more robust language detection
-    if not all(ord(c) < 128 for c in result.replace(' ', '')):
-        # If non-ASCII characters detected, use a simpler approach
-        return text
-    
-    return result
 
 def calculate_similarity(text1, text2):
     """Calculate cosine similarity between two texts"""

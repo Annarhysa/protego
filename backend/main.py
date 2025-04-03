@@ -239,14 +239,6 @@ def chat():
     elaborated_recommendations = elaborate_recommendations(sentiment_score)
 
     filtered_recommendations = batch_improve_recommendations(elaborated_recommendations)
-
-    #elaborated_recommendations = elaborate_recommendations(filtered_recommendations_1)
-
-    #filtered_recommendations_2 = remove_repetitive_sentences(elaborated_recommendations)
-    
-    # Paraphrase recommendations for diversity
-    #paraphrased_recommendations = [paraphrase_text(rec) for rec in filtered_recommendations]
-
     
     return f"Based on your query, I identified the crime as {', '.join(detected_crimes)}.\n Here is my suggestion: {filtered_recommendations}" 
 
