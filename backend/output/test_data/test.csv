@@ -1,11 +1,25 @@
 crime,sentiment_score,recommendations
-Child Abuse,-0.8,Contact local authorities. Report to child protective services
-Identity Theft,-0.9,Contact bank. Report to police
-Stalking, -0.7, Contact local police. Vary daily routines
-Phishing, -0.6, Do not respond. Report to email provider
-Theft,-0.9,Contact police. Secure property
+Child Abuse,-0.8,Save the messages as evidence. Seek counseling. File a report with the FTC
+Identity Theft,-0.9,Avoid doing and there is more. Do not click on any links in the email. Contact your bank directly.
+Stalking, -0.7, Double check number phone number or email is a real organization Report the incident to law enforcement. Use two factor authentication.
+Phishing, -0.6, Let your freinds know about the scam. Uninstall that software There is a good chance that this is a scam.
+Theft,-0.9,Take a time to be away. These actions are bad and don't need it what happen and there is more too come.
 Cyberbullying,-0.8,Don't engage with the user. Save all messages and communications as evidence.
 Theft,-0.7,Report to police. Post on local lost and found
 theft,-0.8,Contact police. Document damage
-Identity Theft,-0.7,Block that profile If it is a fake profile report that account. Block the email.
+Identity Theft,-0.7, Block that profile If it is a fake profile report that account. Block the email.
 Phishing,-0.9,Contact bank. Report the fake message and block the sender. Never provide personal or financial information to claim a prize.
+Child Abuse, -0.8,Don't send the images or videos to others. Intervene if it is safe to do so. Report the incident to the platform or website.
+Stalking, -0.7, Double check number phone number or email is a real organization Report the incident to law enforcement. Use two factor authentication.
+Job Fraud, -0.6,  Do not click on any links in the email. Contact your bank directly. Never provide personal financial information upfront. Be cautious. This is a common scam tactic.
+Phishing, -0.6, Let your freinds know about the scam. Uninstall that software There is a good chance that this is a scam.
+Identity Theft, -0.7, Check for a secure connection (HTTPS) before entering any personal information. Contact law enforcement if you feel it's too bad Never believe it is true and never provide personal information.
+Identity Theft, -0.9, Contact bank. Report to authorities.
+Ransomware, -0.9, Block them and save the evidence. Avoid doing and there is more.
+Data Breach, -0.8, Verify the website's URL. Phishing sites often use misspelled or slightly altered URLs. Monitor your email for phishing attempts. Avoid clicking any links.
+Online Drug Trafficking, -0.9, Report to law enforcement. Avoid engagement.
+Rape, -0.95, What's happening isn't normal There are a lot of rude and scary people online don't engage. Be safe and don't connect.
+Sexual Assault, -0.95, Report to police. Seek medical attention.
+Homicide, -1.0, Contact emergency services immediately.
+Robbery, -0.9, Contact police. Secure property.
+Theft, -0.7, Report to police. Post on local lost and found.
