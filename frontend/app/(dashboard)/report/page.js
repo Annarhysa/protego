@@ -10,6 +10,9 @@ const ReportPage = () => {
   const [location, setLocation] = useState("");
   const [attackType, setAttackType] = useState("");
   const [message, setMessage] = useState("");
+  const [detectedCrimes, setDetectedCrimes] = useState([]);
+  const [recommendations, setRecommendations] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleReport = async () => {
     const res = await fetch(`${API_URL}/report`, {
@@ -23,12 +26,15 @@ const ReportPage = () => {
     });
     const data = await res.json();
     setMessage(data.message);
+    setDetectedCrimes(data.detected_crimes || []);
+    setRecommendations(data.recommendations);
+    setIsSubmitted(true);
   };
 
   return (
     <Card>
       <CardHeader>
-      <CardTitle className="text-2xl font-bold">Report a crime</CardTitle>
+        <CardTitle className="text-2xl font-bold">Report a crime</CardTitle>
       </CardHeader>
       <CardContent>
         <Input
@@ -53,7 +59,30 @@ const ReportPage = () => {
           className="mb-4"
         />
         <Button className="mt-3" onClick={handleReport}>Report Crime</Button>
-        {message && <p className="mt-4 text-green-500">{message}</p>}
+        
+        {isSubmitted && (
+          <div className="mt-6 border-t pt-4">
+            <p className="text-green-500 mb-4">{message}</p>
+            
+            {detectedCrimes.length > 0 && (
+              <div className="mb-4">
+                <h3 className="font-semibold mb-2">Detected Crimes:</h3>
+                <ul className="list-disc pl-5">
+                  {detectedCrimes.map((crime, index) => (
+                    <li key={index} className="text-gray-700">{crime}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            {recommendations && recommendations !== "No specific recommendations available." && (
+              <div>
+                <h3 className="font-semibold mb-2">Recommendations:</h3>
+                <p className="text-gray-700">{recommendations}</p>
+              </div>
+            )}
+          </div>
+        )}
       </CardContent>
     </Card>
   );
