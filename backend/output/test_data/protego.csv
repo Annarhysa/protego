@@ -1,0 +1,11 @@
+crime,sentiment_score,recommendations
+child abuse, -0.8, Save the messages as evidence. Seek counseling. File a report with the FTC
+identity theft, -0.9, Avoid doing and there is more. Do not click on any links in the email. Contact your bank directly.
+stalking, -0.8, Double check number phone number or email is a real organization Report the incident to law enforcement. Use two factor authentication.
+phishing, -0.6, Let your freinds know about the scam. Uninstall that software There is a good chance that this is a scam.
+theft, -1.0, Take a time to be away. These actions are bad and don't need it what happen and there is more too come.
+bullying, -0.8, Don't engage with the user. Save all messages and communications as evidence.
+theft, -0.9, If you are not expecting anyone. Do not open the door. These actions and people should make you feel uncomfortable and don't. Contact to better actions.
+theft, -0.8, Avoid doing and there is more. Avoid contact.
+identity theft, -1.0, Block that profile If it is a fake profile report that account. Block the email.
+phishing, -0.9, Report the fake message Block the sender. Never provide personal or financial information to claim a prize.
