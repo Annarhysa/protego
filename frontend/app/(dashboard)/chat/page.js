@@ -48,51 +48,55 @@ const ChatPage = () => {
             {/* Title */}
             <h1 className="text-2xl font-bold text-center mb-4">Recommendation Engine</h1>
 
-            <Card className="flex-grow overflow-hidden">
-                <CardContent className="h-full flex flex-col">
-                    {/* Chat Window */}
-                    <div ref={chatRef} className="flex-1 overflow-y-auto space-y-4 p-4 bg-gray-100 rounded-lg flex flex-col items-center justify-center">
-                        {messages.length === 0 ? (
-                            <p className="text-gray-500 text-center text-sm">
-                                👋 Hello! Type a message below to start chatting.
-                            </p>
-                        ) : (
-                            messages.map((msg, index) => (
-                                <div
-                                    key={index}
-                                    className={`p-3 rounded-lg max-w-xs ${
-                                        msg.sender === "user"
-                                            ? "bg-blue-500 text-white self-end"
-                                            : "bg-gray-300 text-black self-start"
-                                    }`}
-                                >
-                                    {msg.text}
-                                </div>
-                            ))
-                        )}
-                        {loading && (
-                            <div className="p-3 bg-gray-300 text-black self-start rounded-lg max-w-xs">
-                                Typing...
-                            </div>
-                        )}
-                    </div>
+        <Card className="flex-grow overflow-hidden flex flex-col">
+            <CardContent className="flex flex-col h-full px-4 pb-4">
+            {/* Chat Window */}
+            <div
+            ref={chatRef}
+            className="flex-1 overflow-y-auto space-y-4 bg-gray-100 rounded-lg p-4"
+            style={{ maxHeight: "calc(100vh - 250px)" }} // 👈 Adjust based on header/input height
+            >
+            {messages.length === 0 ? (
+                <p className="text-gray-500 text-center text-sm">
+                👋 Hello! Type a message below to start chatting.
+                </p>
+            ) : (
+                messages.map((msg, index) => (
+                <div
+                    key={index}
+                    className={`p-3 rounded-lg break-words w-fit max-w-[80%] ${
+                        msg.sender === "user"
+                        ? "bg-blue-500 text-white ml-auto text-right"
+                        : "bg-gray-300 text-black mr-auto text-left"
+                    }`}
+                    >
+                    {msg.text}
+                </div>))
+            )}
+            {loading && (
+                <div className="p-3 bg-gray-300 text-black self-start rounded-lg max-w-[90px]">
+                Typing...
+                </div>
+            )}
+            </div>
 
-                    {/* Input & Send Button */}
-                    <div className="flex items-center gap-2 mt-4">
-                        <Input
-                            type="text"
-                            value={query}
-                            onChange={(e) => setQuery(e.target.value)}
-                            placeholder="Type your message..."
-                            className="flex-1"
-                            disabled={loading}
-                        />
-                        <Button onClick={handleSubmit} className="w-24" disabled={loading}>
-                            {loading ? "..." : "Send"}
-                        </Button>
-                    </div>
-                </CardContent>
-            </Card>
+            {/* Input & Send Button */}
+            <div className="flex items-center gap-2 mt-4">
+            <Input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Type your message..."
+                className="flex-1"
+                disabled={loading}
+            />
+            <Button onClick={handleSubmit} className="w-24" disabled={loading}>
+                {loading ? "..." : "Send"}
+            </Button>
+            </div>
+            </CardContent>
+        </Card>
+
         </div>
     );
 };
