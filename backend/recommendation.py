@@ -31,7 +31,7 @@ def detect_crime(query):
     
     # Find top 3 matches
     similarity_scores = util.pytorch_cos_sim(query_embedding, crime_embeddings)[0]
-    top_indices = torch.topk(similarity_scores, k=3).indices.tolist()
+    top_indices = torch.topk(similarity_scores, k=2).indices.tolist()
     
     return [crime_data[i]["crime"] for i in top_indices]
 
@@ -53,13 +53,6 @@ def get_sentiment(text):
     label = result["label"]
     score = result["score"] if label == "POSITIVE" else -result["score"]
     return score
-
-
-def calculate_similarity(text1, text2):
-    """Calculate cosine similarity between two texts"""
-    embeddings = sbert_model.encode([text1, text2], convert_to_tensor=True)
-    similarity = util.pytorch_cos_sim(embeddings[0], embeddings[1]).item()
-    return similarity
 
 def get_recommendations(crimes):
     """Get recommendations across multiple detected crimes"""
@@ -99,12 +92,12 @@ def elaborate_recommendations(recommendations):
 
     elaborated_recommendations = []
     for rec in recommendations:
-        prompt = f"Elaborate this recommendation with detailed steps and examples: {rec}"
+        prompt = f"Write a proper sentence for this recommendation: {rec}"
         generated = text_improver(
             prompt,
-            max_length=300,
+            max_length=200,
             num_beams=4,
-            repetition_penalty=2.5,
+            repetition_penalty=5.0,
             temperature=0.7
         )
         elaborated_recommendations.append(generated[0]["generated_text"].strip())
@@ -121,7 +114,7 @@ def batch_improve_recommendations(recommendations_list):
     )
     
     # Create prompts for each recommendation
-    prompts = [f"Convert this note into a helpful, complete sentence: '{rec}'" 
+    prompts = [f"Convert this note into a helpful, complete sentence: {rec}" 
               for rec in recommendations_list]
     
     # Process all prompts in one batch
@@ -136,6 +129,6 @@ def batch_improve_recommendations(recommendations_list):
     improved_recommendations = [result["generated_text"] for result in results]
     
     # Combine into a coherent paragraph
-    final_response = " ".join(improved_recommendations)
+    final_response = ' '.join(improved_recommendations)
     
     return final_response
