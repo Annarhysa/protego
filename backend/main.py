@@ -122,8 +122,28 @@ def report():
         if not data or not data.get('crime'):
             return jsonify({"error": "Please provide crime details."}), 400
 
-        reporter.report_crime(data)  # Pass the data to the report_crime method
-        return jsonify({"message": "Crime reported successfully. Remember, you're not alone. Reach out to emergency services if you need immediate help."})
+        # Report the crime and get the report data back
+        report = reporter.report_crime(data)
+        
+        # Extract crime details from the report
+        crime_summary = report['summary']
+        
+        # Generate recommendations using functions from /chat endpoint
+        detected_crimes = detect_crime(crime_summary)
+        all_recommendations = get_recommendations(detected_crimes)
+        
+        recommendations_message = ""
+        if all_recommendations:
+            sentiment_score = score_and_sort_recommendations(crime_summary, all_recommendations)
+            elaborated_recommendations = elaborate_recommendations(sentiment_score)
+            filtered_recommendations = batch_improve_recommendations(elaborated_recommendations)
+            recommendations_message = f"\n\nBased on your report, here are some recommendations: {filtered_recommendations}"
+        
+        return jsonify({
+            "message": "Crime reported successfully. Remember, you're not alone. Reach out to emergency services if you need immediate help." + recommendations_message,
+            "detected_crimes": detected_crimes,
+            "recommendations": recommendations_message.strip() if recommendations_message else "No specific recommendations available."
+        })
 
     except Exception as e:
         logger.error(f"Error in /report endpoint: {str(e)}")
