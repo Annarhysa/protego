@@ -1,0 +1,11 @@
+crime,sentiment_score,recommendations
+Child Abuse,-0.8,Contact local authorities. Report to child protective services
+Identity Theft,-0.9,Contact bank. Report to police
+Stalking, -0.7, Contact local police. Vary daily routines
+Phishing, -0.6, Do not respond. Report to email provider
+Theft,-0.9,Contact police. Secure property
+Cyberbullying,-0.8,Don't engage with the user. Save all messages and communications as evidence.
+Theft,-0.7,Report to police. Post on local lost and found
+theft,-0.8,Contact police. Document damage
+Identity Theft,-0.7,Block that profile If it is a fake profile report that account. Block the email.
+Phishing,-0.9,Contact bank. Report the fake message and block the sender. Never provide personal or financial information to claim a prize.
