@@ -25,8 +25,9 @@ class CrimeReporter:
             location = data.get('location', 'Unknown')  # Use location from data if automatic detection fails
             lat, lon = None, None
 
+        summary = data.get('crime', 'No description provided')  # Get summary from data
+
         attack_type = data.get('attack_type', 'Unknown')  # Get attack type from data
-        summary = data.get('summary', 'No description provided')  # Get summary from data
 
         report = {
             'iyear': current_date.year,
@@ -36,7 +37,7 @@ class CrimeReporter:
             'latitude': lat,
             'longitude': lon,
             'summary': summary,
-            'attacktype1_txt': attack_type
+            'attacktype': attack_type
         }
 
         df = pd.DataFrame([report])
