@@ -79,6 +79,7 @@ def score_and_sort_recommendations(user_query, all_recommendations):
     # Get top 3 recommendations by sentiment match
     top_recommendations = sorted(scored_recs, key=lambda x: x[1])[:3]
     
+    print(f"Sentiment score: {round(user_sentiment, 2)}")
     return [rec[0] for rec in top_recommendations]
 
 def elaborate_recommendations(recommendations):
