@@ -31,21 +31,9 @@ def detect_crime(query):
     
     # Find top 3 matches
     similarity_scores = util.pytorch_cos_sim(query_embedding, crime_embeddings)[0]
-    top_indices = torch.topk(similarity_scores, k=2).indices.tolist()
+    top_indices = torch.topk(similarity_scores, k=1).indices.tolist()
     
     return [crime_data[i]["crime"] for i in top_indices]
-
-
-def elaborate_recommendation(text):
-    """Generate detailed recommendations using FLAN-T5"""
-    generated = generation_pipeline(
-        f"Elaborate this recommendation with detailed steps and examples: {text}",
-        max_length=300,
-        num_beams=4,
-        repetition_penalty=2.5,
-        temperature=0.7
-    )
-    return generated[0]["generated_text"].strip()
 
 # Function to get sentiment score
 def get_sentiment(text):
