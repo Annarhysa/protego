@@ -260,7 +260,7 @@ def chat():
 
     filtered_recommendations = batch_improve_recommendations(elaborated_recommendations)
     
-    return f"Based on your query, I identified the crime as {', '.join(detected_crimes)}.\n Here is my suggestion: {filtered_recommendations}." 
+    return f"Based on your query, I identified the crime as {', '.join(detected_crimes)}.\n Here is my suggestion: {filtered_recommendations}" 
 
 if __name__ == "__main__":
     app.run(debug=True)
