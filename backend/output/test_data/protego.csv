@@ -5,7 +5,21 @@ stalking, -0.8, Double check number phone number or email is a real organization
 phishing, -0.6, Let your freinds know about the scam. Uninstall that software There is a good chance that this is a scam.
 theft, -1.0, Take a time to be away. These actions are bad and don't need it what happen and there is more too come.
 bullying, -0.8, Don't engage with the user. Save all messages and communications as evidence.
-theft, -0.9, If you are not expecting anyone. Do not open the door. These actions and people should make you feel uncomfortable and don't. Contact to better actions.
-theft, -0.8, Avoid doing and there is more. Avoid contact.
+theft, -0.9, Report to police. Post on local lost and found
+theft, -0.8, Contact police. Document damage
 identity theft, -1.0, Block that profile If it is a fake profile report that account. Block the email.
 phishing, -0.9, Report the fake message Block the sender. Never provide personal or financial information to claim a prize.
+child abuse, -0.9, Don't send the images or videos to others. Intervene if it is safe to do so. Report the incident to the platform or website.
+stalking, -0.8, Double check number phone number or email is a real organization Report the incident to law enforcement. Use two factor authentication.
+job fraud, -0.8, Do not click on any links in the email. Contact your bank directly. Never provide personal financial information upfront. Be cautious. This is a common scam tactic.
+phishing, -0.8, Let your freinds know about the scam. Uninstall that software There is a good chance that this is a scam.
+identity theft, -0.8, Check for a secure connection (HTTPS) before entering any personal information. Contact law enforcement if you feel it's too bad Never believe it is true and never provide personal information.
+identity theft, -0.9, Never provide personal or financial information to claim a prize. Report the fake message Don't make contact.
+ransomware, -0.9, Block them and save the evidence. Avoid doing and there is more.
+data breach, -0.8, Verify the website's URL. Phishing sites often use misspelled or slightly altered URLs. Monitor your email for phishing attempts. Avoid clicking any links.
+online drug trafficking, -0.9, Log in to your account directly through the official website not through the email. Avoid touching the drugs and providing assistance to that individual Check your account settings and security preferences.
+sexual assault, -0.95, What's happening isn't normal There are a lot of rude and scary people online don't engage. Be safe and don't connect.
+sexual assault, -0.95, Don't allow those interactions Avoid interactions and reach out to authorities or legal officials. Block the person immediately.
+homicide, -1.0, If you feel unsafe leave immediately. These actions and people should make you feel uncomfortable and don't. Contact to better actions If you are not expecting anyone and do not open the door.
+robbery, -1.0, No actions bad but may have happened and wrong actions Call law enforcement if you feel threatened or suspicious. Take a time to be away.
+theft, -0.9,  If you are not expecting anyone. Do not open the door. These actions and people should make you feel uncomfortable and don't. Contact to better actions.
