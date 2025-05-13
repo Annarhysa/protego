@@ -12,3 +12,4 @@ frontend/build
 frontend/.DS_Store
 frontend/*.pem
 frontend/.vercel
+venv
