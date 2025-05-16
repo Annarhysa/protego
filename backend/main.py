@@ -137,7 +137,7 @@ def report():
             sentiment_score = score_and_sort_recommendations(crime_summary, all_recommendations)
             elaborated_recommendations = elaborate_recommendations(sentiment_score)
             filtered_recommendations = batch_improve_recommendations(elaborated_recommendations)
-            recommendations_message = f"\n\nBased on your report, here are some recommendations: {filtered_recommendations}"
+            recommendations_message = filtered_recommendations
         
         return jsonify({
             "message": "Crime reported successfully. Remember, you're not alone. Reach out to emergency services if you need immediate help." + recommendations_message,

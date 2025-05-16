@@ -40,11 +40,11 @@ class CrimePredictor:
         last_year = train_data['ds'].dt.year.max()
         future_dates = pd.DataFrame({
             'ds': pd.date_range(
-                start=f'{last_year + 1}-01-01',
+                start=datetime.today(),     # Start from current datetime
                 periods=future_years,
-                freq='YE'
-            )
-        })
+                freq='YE'                   # Year-end frequency
+                )
+                })
         
         # Make predictions
         forecast = self.model.predict(future_dates)
